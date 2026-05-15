@@ -1,0 +1,137 @@
+@import "tailwindcss";
+@import "@fontsource-variable/geologica";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  body {
+    font-family: "Geologica Variable", "Geologica", sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+}
+
+.sidebar-transition {
+  transition:
+    width 0.3s ease,
+    padding 0.3s ease;
+}
+
+.sidebar-transition button span {
+  transition: opacity 0.2s ease;
+}
+
+/* Кастомный тултип */
+.tooltip-group {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+.tooltip-content {
+  position: absolute;
+  z-index: 50;
+  padding: 4px 8px;
+  font-size: 12px;
+  font-weight: 500;
+  color: white;
+  background-color: #111827;
+  border-radius: 6px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity 0.2s ease,
+    visibility 0.2s ease;
+  transition-delay: 0ms;
+}
+
+.dark .tooltip-content {
+  background-color: oklch(0.319 0 0);
+  color: #f3f4f6;
+}
+
+.tooltip-group:hover .tooltip-content {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 500ms;
+}
+
+.tooltip-right {
+  left: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 8px;
+}
+
+.tooltip-left {
+  right: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-right: 8px;
+}
+
+.tooltip-top {
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 8px;
+}
+
+.tooltip-bottom {
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 8px;
+}
+
+.tooltip-arrow {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background-color: #111827;
+  transform: rotate(45deg);
+}
+
+.dark .tooltip-arrow {
+  background-color: oklch(0.319 0 0);
+}
+
+.tooltip-right .tooltip-arrow {
+  left: -3px;
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.tooltip-left .tooltip-arrow {
+  right: -3px;
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.tooltip-top .tooltip-arrow {
+  bottom: -3px;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+}
+
+.tooltip-bottom .tooltip-arrow {
+  top: -3px;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+}
+
+@theme {
+  --color-grey-100: oklch(0.97 0.0029 264.54); /*bg*/
+  --color-grey-200: oklch(0.9184 0.006 264.53); /*border && hover*/
+  --color-grey-300: oklch(0.6068 0 0); /*placeholder better not to touch*/
+  --color-grey-400: oklch(0.3516 0 0); /*button icon*/
+  --color-grey-500: oklch(0.319 0 0); /*active dark theme*/
+  --color-grey-600: oklch(0.2645 0 0); /*border && hover dark theme*/
+  --color-grey-700: oklch(0 0 0); /**/
+  --color-grey-800: oklch(0.2046 0 0); /*sidebar bg dark theme*/
+  --color-grey-900: oklch(0.1448 0 0); /*bg dark theme*/
+
+  --color-black: oklch(0.1543 0 0);
+  --color-white: oklch(98.5% 0.002 247.839);
+}
