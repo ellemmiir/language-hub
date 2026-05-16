@@ -50,7 +50,7 @@ function App() {
 
       <div className="flex-1 flex flex-col relative overflow-hidden">
         <TopBar />
-        <main className="flex-1 px-6 pt-6 bg-transparent z-10 overflow-y-auto">
+        <main className="flex-1 px-6 pt-6 bg-transparent  overflow-y-auto">
           {pageContent}
         </main>
       </div>

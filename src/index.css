@@ -10,6 +10,21 @@
   }
 }
 
+/*анимация шестеренки, дропдаун профиля*/
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 3s linear infinite;
+}
+
+/*анимация сайдбара*/
 .sidebar-transition {
   transition:
     width 0.3s ease,
@@ -20,7 +35,7 @@
   transition: opacity 0.2s ease;
 }
 
-/* Кастомный тултип */
+/* кастомный тултип, памагитиии */
 .tooltip-group {
   position: relative;
   display: block;

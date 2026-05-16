@@ -58,13 +58,39 @@ export function HomePage({ onNavigate }: HomePageProps) {
 
       <UpdateWidget onNavigate={onNavigate} />
 
-      <div className="mt-10 pt-6 text-center border-t border-gray-200 dark:border-gray-700">
-        <p className="text-sm text-gray-500 dark:text-gray-500">
-          Нашли ошибку или есть предложение? Напишите мне: test@test.com
-        </p>
-        <p className="text-xs text-gray-400 dark:text-gray-600 mt-2">
-          Language Hub постоянно развивается 🖤
-        </p>
+      <div className="mt-16 pt-8 pb-8 border-t border-gray-200 dark:border-gray-700">
+        <div className="text-center space-y-3">
+          {/* <p className="text-sm text-gray-500 dark:text-gray-500">
+            Language Hub — полностью бесплатный проект. Но вы можете{" "}
+            <button
+              onClick={() => onNavigate("donate")}
+              className="text-gray-700 dark:text-gray-300 hover:underline font-medium"
+            >
+              поддержать меня :）
+            </button>
+          </p> */}
+
+          <div className="pt-2">
+            <p className="text-sm text-gray-500 dark:text-gray-500">
+              Нашли ошибку или есть предложение? Напишите мне:{" "}
+              <a
+                href="mailto:language@hub.com"
+                className="text-gray-700 dark:text-gray-300 hover:underline"
+              >
+                language@hub.com
+              </a>
+            </p>
+          </div>
+
+          <div className="pt-2 space-y-1">
+            <p className="text-xs text-gray-400 dark:text-gray-600">
+              Language Hub постоянно развивается 🖤
+            </p>
+            <p className="text-xs text-gray-400 dark:text-gray-600">
+              © 2026 Language Hub
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   );
