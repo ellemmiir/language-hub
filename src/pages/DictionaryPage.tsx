@@ -6,9 +6,11 @@ import { MagnifyingGlassIcon } from "@heroicons/react/24/outline";
 import { useDebounce } from "../hooks/useDebounce";
 import { AlphabetScroll } from "../components/AlphabetScroll";
 
-const MemoizedPhraseCard = React.memo(({ phrase }: { phrase: Phrase }) => (
-  <PhraseCard phrase={phrase} />
-));
+const MemoizedPhraseCard = React.memo(
+  ({ phrase, searchQuery }: { phrase: Phrase; searchQuery: string }) => (
+    <PhraseCard phrase={phrase} searchQuery={searchQuery} />
+  ),
+);
 MemoizedPhraseCard.displayName = "MemoizedPhraseCard";
 
 export function DictionaryPage() {
@@ -142,7 +144,10 @@ export function DictionaryPage() {
               overscan={200}
               components={{ Footer }}
               itemContent={(index) => (
-                <MemoizedPhraseCard phrase={filteredPhrases[index]} />
+                <MemoizedPhraseCard
+                  phrase={filteredPhrases[index]}
+                  searchQuery={debouncedSearch}
+                />
               )}
             />
           </div>

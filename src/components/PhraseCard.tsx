@@ -1,7 +1,9 @@
 import type { Phrase } from "../data/phrases";
+import { HighlightText } from "./HighlightText";
 
 type PhraseCardProps = {
   phrase: Phrase;
+  searchQuery?: string; // добавляем пропс для подсветки
 };
 
 const tagOrder: Record<string, number> = {
@@ -13,9 +15,8 @@ const tagOrder: Record<string, number> = {
   неологизм: 6,
 };
 
-export function PhraseCard({ phrase }: PhraseCardProps) {
+export function PhraseCard({ phrase, searchQuery = "" }: PhraseCardProps) {
   const sortedTags = [...phrase.tags].sort((a, b) => {
-    //на случай отсутствия ключа
     const orderA = tagOrder[a] ?? 99;
     const orderB = tagOrder[b] ?? 99;
     return orderA - orderB;
@@ -25,7 +26,7 @@ export function PhraseCard({ phrase }: PhraseCardProps) {
     <div className="border border-grey-200 dark:border-grey-700 rounded-md p-5 bg-white dark:bg-grey-600 hover:shadow-md transition-shadow mb-4">
       <div className="flex justify-between items-start gap-4 mb-4">
         <h3 className="text-xl font-bold text-black dark:text-white">
-          {phrase.phrase}
+          <HighlightText text={phrase.phrase} highlight={searchQuery} />
         </h3>
         <div className="flex flex-wrap gap-1 justify-end">
           {sortedTags.map((tag) => (
@@ -45,7 +46,10 @@ export function PhraseCard({ phrase }: PhraseCardProps) {
             Аналог
           </span>
           <p className="text-md text-black dark:text-white font-medium">
-            {phrase.russianEquivalent}
+            <HighlightText
+              text={phrase.russianEquivalent}
+              highlight={searchQuery}
+            />
           </p>
         </div>
       )}
@@ -55,7 +59,7 @@ export function PhraseCard({ phrase }: PhraseCardProps) {
           Значение
         </span>
         <p className="text-sm text-grey-700 dark:text-grey-300">
-          {phrase.meaning}
+          <HighlightText text={phrase.meaning} highlight={searchQuery} />
         </p>
       </div>
 
