@@ -50,7 +50,9 @@ function App() {
 
       <div className="flex-1 flex flex-col relative">
         <TopBar />
-        <main className="flex-1 p-6 bg-transparent z-10">{pageContent}</main>
+        <main className="flex-1 px-6 pt-6 bg-transparent z-10">
+          {pageContent}
+        </main>
       </div>
     </div>
   );

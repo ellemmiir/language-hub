@@ -22,7 +22,7 @@ export function PhraseCard({ phrase }: PhraseCardProps) {
   });
 
   return (
-    <div className="border border-grey-200 dark:border-grey-700 rounded-md p-5 bg-white dark:bg-grey-600 hover:shadow-md transition-shadow">
+    <div className="border border-grey-200 dark:border-grey-700 rounded-md p-5 bg-white dark:bg-grey-600 hover:shadow-md transition-shadow mb-4">
       <div className="flex justify-between items-start gap-4 mb-4">
         <h3 className="text-xl font-bold text-black dark:text-white">
           {phrase.phrase}
