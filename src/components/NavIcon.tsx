@@ -4,6 +4,7 @@ import {
   BookOpenIcon,
   ClipboardDocumentListIcon,
   BookmarkIcon,
+  QuestionMarkCircleIcon,
 } from "@heroicons/react/24/outline";
 import {
   HomeIcon as HomeIconSolid,
@@ -11,10 +12,11 @@ import {
   AcademicCapIcon as AcademicCapIconSolid,
   ClipboardDocumentListIcon as ClipboardDocumentListIconSolid,
   BookmarkIcon as BookmarkIconSolid,
+  QuestionMarkCircleIcon as QuestionMarkCircleIconSolid,
 } from "@heroicons/react/24/solid";
 
 type NavIconProps = {
-  name: "home" | "grammar" | "text" | "version" | "dictionary";
+  name: "home" | "grammar" | "text" | "version" | "dictionary" | "about";
   isActive: boolean;
   className?: string;
 };
@@ -33,6 +35,10 @@ export function NavIcon({
       solid: ClipboardDocumentListIconSolid,
     },
     dictionary: { outline: BookmarkIcon, solid: BookmarkIconSolid },
+    about: {
+      outline: QuestionMarkCircleIcon,
+      solid: QuestionMarkCircleIconSolid,
+    },
   };
 
   const IconComponent = isActive ? icons[name].solid : icons[name].outline;

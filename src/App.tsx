@@ -7,6 +7,7 @@ import { GrammarPage } from "./pages/GrammarPage";
 import { TextPage } from "./pages/TextPage";
 import { DictionaryPage } from "./pages/DictionaryPage";
 import { VersionPage } from "./pages/VersionPage";
+import { AboutPage } from "./pages/AboutPage";
 
 function App() {
   const [currentPage, setCurrentPage] = useState("home");
@@ -38,6 +39,8 @@ function App() {
     pageContent = <DictionaryPage />;
   } else if (currentPage === "version") {
     pageContent = <VersionPage />;
+  } else if (currentPage === "about") {
+    pageContent = <AboutPage />;
   } else {
     pageContent = <div>Страница не найдена</div>;
   }
@@ -50,7 +53,7 @@ function App() {
 
       <div className="flex-1 flex flex-col relative overflow-hidden">
         <TopBar />
-        <main className="flex-1 px-6 pt-6 bg-transparent  overflow-y-auto">
+        <main className="flex-1 px-6 pt-6 bg-transparent  overflow-y-auto z-1">
           {pageContent}
         </main>
       </div>

@@ -29,6 +29,7 @@ export function Sidebar({ onNavigate, currentPage }: SidebarProps) {
 
   const secondaryNavItems = [
     { id: "version", label: "Версии", iconName: "version" as const },
+    { id: "about", label: "О проекте", iconName: "about" as const },
   ];
 
   const sidebarWidth = isCollapsed ? "w-[80px]" : "w-[250px]";

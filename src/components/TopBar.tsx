@@ -12,7 +12,7 @@ export function TopBar() {
           <MagnifyingGlassIcon className="w-5 h-5 absolute left-3 top-1/2 transform -translate-y-1/2 text-grey-300" />
           <input
             type="text"
-            placeholder="Поиск..."
+            placeholder="Глобальный поиск..."
             className="
               pl-10 pr-4 py-2 rounded-md 
               border border-grey-200 dark:border-grey-600 
