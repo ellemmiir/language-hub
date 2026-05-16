@@ -43,14 +43,14 @@ function App() {
   }
 
   return (
-    <div className="flex min-h-screen relative bg-grey-100 dark:bg-grey-900">
+    <div className="flex h-screen relative bg-grey-100 dark:bg-grey-900">
       <Sidebar onNavigate={setCurrentPage} currentPage={currentPage} />
 
       <AccentBlob color={getAccentColor()} />
 
-      <div className="flex-1 flex flex-col relative">
+      <div className="flex-1 flex flex-col relative overflow-hidden">
         <TopBar />
-        <main className="flex-1 px-6 pt-6 bg-transparent z-10">
+        <main className="flex-1 px-6 pt-6 bg-transparent z-10 overflow-y-auto">
           {pageContent}
         </main>
       </div>

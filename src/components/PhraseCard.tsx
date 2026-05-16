@@ -3,7 +3,7 @@ import { HighlightText } from "./HighlightText";
 
 type PhraseCardProps = {
   phrase: Phrase;
-  searchQuery?: string; // добавляем пропс для подсветки
+  searchQuery?: string;
 };
 
 const tagOrder: Record<string, number> = {

@@ -5,6 +5,7 @@ import { PhraseCard } from "../components/PhraseCard";
 import { MagnifyingGlassIcon } from "@heroicons/react/24/outline";
 import { useDebounce } from "../hooks/useDebounce";
 import { AlphabetScroll } from "../components/AlphabetScroll";
+import { useDictionaryStats } from "../hooks/useDictionaryStats";
 
 const MemoizedPhraseCard = React.memo(
   ({ phrase, searchQuery }: { phrase: Phrase; searchQuery: string }) => (
@@ -20,7 +21,11 @@ export function DictionaryPage() {
 
   const debouncedSearch = useDebounce(searchQuery, 300);
 
-  const allTags = ["Все", ...new Set(phrases.flatMap((p) => p.tags))];
+  const { total, byTag, sortedTags } = useDictionaryStats();
+
+  // const allTags = ["Все", ...new Set(phrases.flatMap((p) => p.tags))];
+
+  const allTagsWithCount = ["Все", ...sortedTags.map(({ tag }) => tag)];
 
   const filteredPhrases = useMemo(() => {
     return phrases.filter((phrase) => {
@@ -35,7 +40,6 @@ export function DictionaryPage() {
     });
   }, [debouncedSearch, selectedTag]);
 
-  // Вычисляем доступные буквы (первые буквы фраз)
   const availableLetters = useMemo(() => {
     const letters = new Set<string>();
     filteredPhrases.forEach((phrase) => {
@@ -72,7 +76,7 @@ export function DictionaryPage() {
 
   return (
     <div className="h-full flex flex-col">
-      <div className="flex-shrink-0">
+      <div className="shrink-0">
         <div className="mb-6">
           <h1 className="text-3xl md:text-4xl font-bold mb-2 tracking-tight dark:text-white">
             Словарь
@@ -103,19 +107,22 @@ export function DictionaryPage() {
         </div>
 
         <div className="flex flex-wrap gap-2 justify-center mb-6">
-          {allTags.map((tag) => (
-            <button
-              key={tag}
-              onClick={() => setSelectedTag(tag)}
-              className={`px-3 py-1.5 rounded-md text-sm transition-colors cursor-pointer ${
-                selectedTag === tag
-                  ? "bg-black text-white dark:bg-white dark:text-black"
-                  : "bg-gray-200 text-black dark:bg-grey-600 dark:text-white hover:bg-gray-300 dark:hover:bg-grey-400"
-              }`}
-            >
-              {tag}
-            </button>
-          ))}
+          {allTagsWithCount.map((tag) => {
+            const count = tag === "Все" ? total : byTag[tag];
+            return (
+              <button
+                key={tag}
+                onClick={() => setSelectedTag(tag)}
+                className={`px-3 py-1.5 rounded-md text-sm transition-colors cursor-pointer ${
+                  selectedTag === tag
+                    ? "bg-black text-white dark:bg-white dark:text-black"
+                    : "bg-gray-200 text-black dark:bg-grey-600 dark:text-white hover:bg-gray-300 dark:hover:bg-grey-400"
+                }`}
+              >
+                {tag} <span className="ml-1 text-xs opacity-70">({count})</span>
+              </button>
+            );
+          })}
         </div>
       </div>
 
