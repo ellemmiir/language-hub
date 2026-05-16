@@ -2,16 +2,19 @@ import { useState } from "react";
 import { phrases } from "../data/phrases";
 import { PhraseCard } from "../components/PhraseCard";
 import { MagnifyingGlassIcon } from "@heroicons/react/24/outline";
+import { useDebounce } from "../hooks/useDebounce";
 
 export function DictionaryPage() {
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedTag, setSelectedTag] = useState<string>("Все");
 
+  const debouncedSearch = useDebounce(searchQuery, 300);
+
   const allTags = ["Все", ...new Set(phrases.flatMap((p) => p.tags))];
 
   const filteredPhrases = phrases.filter((phrase) => {
     const matchesSearch =
-      searchQuery === "" ||
+      debouncedSearch === "" ||
       phrase.phrase.toLowerCase().includes(searchQuery.toLowerCase()) ||
       phrase.meaning.toLowerCase().includes(searchQuery.toLowerCase());
 
