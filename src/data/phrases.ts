@@ -10,4 +10,6 @@ export type Phrase = {
   tags: string[];
 };
 
-export const phrases: Phrase[] = rawPhrases;
+export const phrases: Phrase[] = [...rawPhrases].sort((a, b) => {
+  return a.phrase.localeCompare(b.phrase);
+});

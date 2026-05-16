@@ -1,9 +1,10 @@
-import React, { useState, useMemo } from "react";
-import { Virtuoso } from "react-virtuoso";
+import React, { useState, useMemo, useRef, useCallback } from "react";
+import { Virtuoso, type VirtuosoHandle } from "react-virtuoso";
 import { phrases, type Phrase } from "../data/phrases";
 import { PhraseCard } from "../components/PhraseCard";
 import { MagnifyingGlassIcon } from "@heroicons/react/24/outline";
 import { useDebounce } from "../hooks/useDebounce";
+import { AlphabetScroll } from "../components/AlphabetScroll";
 
 const MemoizedPhraseCard = React.memo(({ phrase }: { phrase: Phrase }) => (
   <PhraseCard phrase={phrase} />
@@ -13,6 +14,7 @@ MemoizedPhraseCard.displayName = "MemoizedPhraseCard";
 export function DictionaryPage() {
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedTag, setSelectedTag] = useState<string>("Все");
+  const virtuosoRef = useRef<VirtuosoHandle>(null);
 
   const debouncedSearch = useDebounce(searchQuery, 300);
 
@@ -31,8 +33,40 @@ export function DictionaryPage() {
     });
   }, [debouncedSearch, selectedTag]);
 
-  //для отступа в конце списка
+  // Вычисляем доступные буквы (первые буквы фраз)
+  const availableLetters = useMemo(() => {
+    const letters = new Set<string>();
+    filteredPhrases.forEach((phrase) => {
+      const firstLetter = phrase.phrase.charAt(0).toUpperCase();
+      if (/[A-Z]/.test(firstLetter)) {
+        letters.add(firstLetter);
+      }
+    });
+    return letters;
+  }, [filteredPhrases]);
+
+  const findFirstIndexByLetter = useCallback(
+    (letter: string) => {
+      const lowerLetter = letter.toLowerCase();
+      return filteredPhrases.findIndex((phrase) =>
+        phrase.phrase.toLowerCase().startsWith(lowerLetter),
+      );
+    },
+    [filteredPhrases],
+  );
+
+  const handleLetterSelect = useCallback(
+    (letter: string) => {
+      const index = findFirstIndexByLetter(letter);
+      if (index !== -1 && virtuosoRef.current) {
+        virtuosoRef.current.scrollToIndex({ index, align: "start" });
+      }
+    },
+    [findFirstIndexByLetter],
+  );
+
   const Footer = () => <div className="h-8" />;
+  const showAlphabet = filteredPhrases.length > 0;
 
   return (
     <div className="h-full flex flex-col">
@@ -93,17 +127,25 @@ export function DictionaryPage() {
           </p>
         </div>
       ) : (
-        <div className="flex-1 min-h-0">
-          <Virtuoso
-            style={{ height: "100%" }}
-            totalCount={filteredPhrases.length}
-            increaseViewportBy={400}
-            overscan={200}
-            components={{ Footer }}
-            itemContent={(index) => (
-              <MemoizedPhraseCard phrase={filteredPhrases[index]} />
-            )}
+        <div className="flex-1 min-h-0 flex gap-6">
+          <AlphabetScroll
+            onLetterSelect={handleLetterSelect}
+            visible={showAlphabet}
+            availableLetters={availableLetters}
           />
+          <div className="flex-1 min-h-0">
+            <Virtuoso
+              ref={virtuosoRef}
+              style={{ height: "100%" }}
+              totalCount={filteredPhrases.length}
+              increaseViewportBy={400}
+              overscan={200}
+              components={{ Footer }}
+              itemContent={(index) => (
+                <MemoizedPhraseCard phrase={filteredPhrases[index]} />
+              )}
+            />
+          </div>
         </div>
       )}
     </div>
