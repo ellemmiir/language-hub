@@ -16,7 +16,7 @@ export function CollapseButton({ isCollapsed, onToggle }: CollapseButtonProps) {
         shadow-md hover:shadow-lg
         transition-[transform,box-shadow] duration-200
         hover:scale-105
-        cursor-pointer
+        cursor-pointer z-20
       "
     >
       {isCollapsed ? (

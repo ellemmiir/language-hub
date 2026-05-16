@@ -4,7 +4,7 @@ import { MagnifyingGlassIcon } from "@heroicons/react/24/outline";
 
 export function TopBar() {
   return (
-    <header className="h-16 px-6 border-b-2 border-grey-200 bg-grey-100 dark:border-grey-600 dark:bg-grey-900 flex items-center justify-between sticky top-0 z-10">
+    <header className="h-16 px-6 border-b-2 border-grey-200 dark:border-grey-600 dark:bg-grey-900 flex items-center justify-between sticky top-0 z-10 bg-transparent ">
       <div className="w-10"></div>
 
       <div className="flex items-center gap-3">
@@ -14,7 +14,7 @@ export function TopBar() {
             type="text"
             placeholder="Поиск..."
             className="
-              pl-10 pr-4 py-2 rounded-lg 
+              pl-10 pr-4 py-2 rounded-md 
               border border-grey-200 dark:border-grey-600 
               bg-gray-50 dark:bg-grey-800 
               text-black dark:text-white 

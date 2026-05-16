@@ -25,18 +25,22 @@ export function VersionPage() {
 
   return (
     <div>
-      <h1 className="text-2xl md:text-3xl font-bold mb-2">История версий</h1>
-      <p className="text-[#666666] dark:text-[#aaaaaa] mb-6">
-        Все изменения Language Hub
-      </p>
+      <div className="mb-8">
+        <h1 className="text-3xl md:text-4xl font-bold mb-2 tracking-tight dark:text-white">
+          История версий
+        </h1>
+        <p className="text-grey-400 dark:text-gray-400">
+          Все изменения Language Hub
+        </p>
+      </div>
 
       {allVersions.map((version) => (
         <div
           key={version.version}
-          className="border border-[#cccccc] dark:border-[#444444] rounded-xl p-5 mb-5 bg-[#fafafa] dark:bg-[#252525]"
+          className="border border-grey-200 dark:border-grey-700 rounded-md p-5 bg-white dark:bg-grey-600 hover:shadow-md transition-shadow mb-4"
         >
           <div className="flex items-center gap-2.5 mb-4">
-            <h2 className="text-xl md:text-2xl font-semibold m-0">
+            <h2 className="text-xl md:text-2xl font-semibold m-0 dark:text-white">
               Версия {version.version}
             </h2>
             <span className="text-sm text-[#666666] dark:text-[#aaaaaa]">

@@ -24,6 +24,7 @@ export function Sidebar({ onNavigate, currentPage }: SidebarProps) {
     { id: "home", label: "Главная", iconName: "home" as const },
     { id: "grammar", label: "Грамматика", iconName: "grammar" as const },
     { id: "text", label: "Тексты", iconName: "text" as const },
+    { id: "dictionary", label: "Словарь", iconName: "dictionary" as const },
   ];
 
   const secondaryNavItems = [

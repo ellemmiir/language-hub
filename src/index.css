@@ -127,7 +127,7 @@
   --color-grey-300: oklch(0.6068 0 0); /*placeholder better not to touch*/
   --color-grey-400: oklch(0.3516 0 0); /*button icon*/
   --color-grey-500: oklch(0.319 0 0); /*active dark theme*/
-  --color-grey-600: oklch(0.2645 0 0); /*border && hover dark theme*/
+  --color-grey-600: oklch(0.2645 0 0); /*border && hover && card bg dark theme*/
   --color-grey-700: oklch(0 0 0); /**/
   --color-grey-800: oklch(0.2046 0 0); /*sidebar bg dark theme*/
   --color-grey-900: oklch(0.1448 0 0); /*bg dark theme*/

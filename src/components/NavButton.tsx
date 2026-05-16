@@ -6,7 +6,7 @@ type NavButtonProps = {
   onClick: () => void;
   isActive: boolean;
   isCollapsed?: boolean;
-  iconName: "home" | "grammar" | "text" | "version";
+  iconName: "home" | "grammar" | "text" | "version" | "dictionary";
   children: React.ReactNode;
 };
 

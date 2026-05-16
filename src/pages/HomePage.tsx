@@ -8,7 +8,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
   return (
     <div>
       <div className="mb-8">
-        <h1 className="text-3xl md:text-4xl font-bold mb-2 tracking-tight">
+        <h1 className="text-3xl md:text-4xl font-bold mb-2 tracking-tight dark:text-white">
           Language Hub
         </h1>
         <p className="text-grey-400 dark:text-gray-400">

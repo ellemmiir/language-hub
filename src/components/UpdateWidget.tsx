@@ -27,8 +27,10 @@ export function UpdateWidget({ onNavigate }: UpdateWidgetProps) {
   };
 
   return (
-    <div className="rounded-xl p-5 bg-white dark:bg-grey-800 border border-grey-200 dark:border-grey-700">
-      <h2 className="text-xl font-semibold mb-1">Последние обновления</h2>
+    <div className="rounded-xl p-5 bg-white dark:bg-grey-600 border border-grey-200 dark:border-grey-700">
+      <h2 className="text-xl font-semibold mb-1 dark:text-white">
+        Последние обновления
+      </h2>
       <p className="text-sm text-grey-500 dark:text-grey-400 mb-4">
         Версия {latestVersion.version} от {latestVersion.date}
       </p>

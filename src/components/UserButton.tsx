@@ -7,7 +7,7 @@ export function UserButton() {
 
   return (
     <button
-      className="p-2 rounded-lg transition-all duration-200 hover:bg-grey-200 dark:hover:bg-grey-600"
+      className="p-2 rounded-lg transition-all duration-200 hover:bg-grey-200 dark:hover:bg-grey-600 cursor-pointer"
       onClick={() => setIsActive(!isActive)}
       title="Профиль"
     >
