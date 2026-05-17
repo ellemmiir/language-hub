@@ -1,5 +1,5 @@
-import { ThemeToggle } from "./ThemeToggle";
-import { UserButton } from "./UserButton";
+import { ThemeToggle } from "../layout/ThemeToggle";
+import { UserButton } from "../layout/UserButton";
 import { MagnifyingGlassIcon } from "@heroicons/react/24/outline";
 
 export function TopBar() {
