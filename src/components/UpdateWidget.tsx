@@ -1,11 +1,9 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { getLatestVersion } from "../data/versions";
 
-type UpdateWidgetProps = {
-  onNavigate: (page: string) => void;
-};
-
-export function UpdateWidget({ onNavigate }: UpdateWidgetProps) {
+export function UpdateWidget() {
+  const navigate = useNavigate();
   const latestVersion = getLatestVersion();
   const [isHovered, setIsHovered] = useState(false);
 
@@ -92,7 +90,7 @@ export function UpdateWidget({ onNavigate }: UpdateWidgetProps) {
       </div>
 
       <button
-        onClick={() => onNavigate("version")}
+        onClick={() => navigate("version")}
         className={`
           mt-4 px-3 py-2 rounded-md 
           transition-colors duration-200 

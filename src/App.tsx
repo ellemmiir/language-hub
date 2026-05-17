@@ -10,7 +10,7 @@ import { VersionPage } from "./pages/VersionPage";
 import { AboutPage } from "./pages/AboutPage";
 
 function App() {
-  const [currentPage, setCurrentPage] = useState("home");
+  const [currentPage] = useState("home");
 
   // Определяем цвет для текущей страницы
   const getAccentColor = () => {
@@ -30,9 +30,9 @@ function App() {
 
   let pageContent;
   if (currentPage === "home") {
-    pageContent = <HomePage onNavigate={setCurrentPage} />;
+    pageContent = <HomePage />;
   } else if (currentPage === "grammar") {
-    pageContent = <GrammarPage onNavigate={setCurrentPage} />;
+    pageContent = <GrammarPage />;
   } else if (currentPage === "text") {
     pageContent = <TextPage />;
   } else if (currentPage === "dictionary") {
@@ -47,7 +47,7 @@ function App() {
 
   return (
     <div className="flex h-screen relative bg-grey-100 dark:bg-grey-900">
-      <Sidebar onNavigate={setCurrentPage} currentPage={currentPage} />
+      <Sidebar />
 
       <AccentBlob color={getAccentColor()} />
 

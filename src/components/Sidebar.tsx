@@ -1,15 +1,13 @@
 import { useState } from "react";
+import { useNavigate, useLocation } from "react-router-dom";
 import { CollapseButton } from "./CollapseButton";
 import { Logo } from "./Logo";
 import { NavButton } from "./NavButton";
 import { SectionDivider } from "./SectionDivider";
 
-type SidebarProps = {
-  onNavigate: (page: string) => void;
-  currentPage: string;
-};
-
-export function Sidebar({ onNavigate, currentPage }: SidebarProps) {
+export function Sidebar() {
+  const navigate = useNavigate();
+  const location = useLocation();
   const [isCollapsed, setIsCollapsed] = useState(() => {
     const saved = localStorage.getItem("sidebarCollapsed");
     return saved === "true";
@@ -20,19 +18,46 @@ export function Sidebar({ onNavigate, currentPage }: SidebarProps) {
     localStorage.setItem("sidebarCollapsed", (!isCollapsed).toString());
   };
 
+  const currentPath = location.pathname;
+
   const mainNavItems = [
-    { id: "home", label: "Главная", iconName: "home" as const },
-    { id: "grammar", label: "Грамматика", iconName: "grammar" as const },
-    { id: "text", label: "Тексты", iconName: "text" as const },
-    { id: "dictionary", label: "Словарь", iconName: "dictionary" as const },
+    { id: "", label: "Главная", iconName: "home" as const, path: "/" },
+    {
+      id: "grammar",
+      label: "Грамматика",
+      iconName: "grammar" as const,
+      path: "/grammar",
+    },
+    { id: "text", label: "Тексты", iconName: "text" as const, path: "/texts" },
+    {
+      id: "dictionary",
+      label: "Словарь",
+      iconName: "dictionary" as const,
+      path: "/dictionary",
+    },
   ];
 
   const secondaryNavItems = [
-    { id: "version", label: "Версии", iconName: "version" as const },
-    { id: "about", label: "О проекте", iconName: "about" as const },
+    {
+      id: "version",
+      label: "Версии",
+      iconName: "version" as const,
+      path: "/versions",
+    },
+    {
+      id: "about",
+      label: "О проекте",
+      iconName: "about" as const,
+      path: "/about",
+    },
   ];
 
   const sidebarWidth = isCollapsed ? "w-[80px]" : "w-[250px]";
+
+  const isActive = (path: string) => {
+    if (path === "/") return currentPath === "/";
+    return currentPath.startsWith(path);
+  };
 
   return (
     <div
@@ -54,8 +79,8 @@ export function Sidebar({ onNavigate, currentPage }: SidebarProps) {
           {mainNavItems.map((item) => (
             <li key={item.id}>
               <NavButton
-                onClick={() => onNavigate(item.id)}
-                isActive={currentPage === item.id}
+                onClick={() => navigate(item.path)}
+                isActive={isActive(item.path)}
                 isCollapsed={isCollapsed}
                 iconName={item.iconName}
               >
@@ -71,8 +96,8 @@ export function Sidebar({ onNavigate, currentPage }: SidebarProps) {
           {secondaryNavItems.map((item) => (
             <li key={item.id}>
               <NavButton
-                onClick={() => onNavigate(item.id)}
-                isActive={currentPage === item.id}
+                onClick={() => navigate(item.path)}
+                isActive={isActive(item.path)}
                 isCollapsed={isCollapsed}
                 iconName={item.iconName}
               >

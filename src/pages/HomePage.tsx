@@ -1,18 +1,16 @@
 import { UpdateWidget } from "../components/UpdateWidget";
+import { useNavigate } from "react-router-dom";
 import { useDictionaryStats } from "../hooks/useDictionaryStats";
 
-type HomePageProps = {
-  onNavigate: (page: string) => void;
-};
-
-export function HomePage({ onNavigate }: HomePageProps) {
+export function HomePage() {
+  const navigate = useNavigate();
   const { total } = useDictionaryStats();
 
   const stats = [
-    { label: "Словарь", value: total, onClick: () => onNavigate("dictionary") },
-    { label: "Грамматика", value: 0, onClick: () => onNavigate("grammar") },
-    { label: "Тексты", value: 0, onClick: () => onNavigate("text") },
-    { label: "Упражнения", value: 0, onClick: () => onNavigate("exercises") },
+    { label: "Словарь", value: total, onClick: () => navigate("/dictionary") },
+    { label: "Грамматика", value: 0, onClick: () => navigate("/grammar") },
+    { label: "Тексты", value: 0, onClick: () => navigate("/texts") },
+    { label: "Упражнения", value: 0, onClick: () => navigate("#") },
   ];
 
   return (
@@ -56,7 +54,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
         </div>
       </div>
 
-      <UpdateWidget onNavigate={onNavigate} />
+      <UpdateWidget />
 
       <div className="mt-16 pt-8 pb-8 border-t border-gray-200 dark:border-gray-700">
         <div className="text-center space-y-3">

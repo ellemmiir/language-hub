@@ -1,20 +1,18 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { GrammarColumn } from "../components/grammar/GrammarColumn";
 import grammarData from "../data/grammarTopics.json";
 import { MagnifyingGlassIcon } from "@heroicons/react/24/outline";
 
-type GrammarPageProps = {
-  onNavigate: (page: string, topicId?: string) => void;
-};
-
-export function GrammarPage({ onNavigate }: GrammarPageProps) {
+export function GrammarPage() {
+  const navigate = useNavigate();
   const [searchQuery, setSearchQuery] = useState("");
 
   const beginnerData = grammarData[0];
   const advancedData = grammarData[1];
 
   const handleTopicClick = (topicId: string) => {
-    onNavigate("grammarTopic", topicId);
+    navigate(`/grammar/${topicId}`);
   };
 
   return (
