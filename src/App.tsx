@@ -32,7 +32,7 @@ function App() {
   if (currentPage === "home") {
     pageContent = <HomePage onNavigate={setCurrentPage} />;
   } else if (currentPage === "grammar") {
-    pageContent = <GrammarPage />;
+    pageContent = <GrammarPage onNavigate={setCurrentPage} />;
   } else if (currentPage === "text") {
     pageContent = <TextPage />;
   } else if (currentPage === "dictionary") {

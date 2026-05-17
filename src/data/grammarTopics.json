@@ -1,0 +1,310 @@
+[
+  {
+    "id": "beginner",
+    "title": "Для новичков",
+    "categories": [
+      {
+        "id": "phonetics",
+        "title": "Фонетика",
+        "topics": [
+          {
+            "id": "alphabet",
+            "title": "Алфавит",
+            "description": "Буквы и их произношение"
+          },
+          {
+            "id": "sounds",
+            "title": "Звуки и транскрипция",
+            "description": "Как читать транскрипцию"
+          },
+          {
+            "id": "stress",
+            "title": "Ударение",
+            "description": "Правила ударения в словах"
+          }
+        ]
+      },
+      {
+        "id": "basics",
+        "title": "Основы",
+        "topics": [
+          {
+            "id": "word-order",
+            "title": "Порядок слов",
+            "description": "Структура английского предложения"
+          },
+          {
+            "id": "pronouns",
+            "title": "Местоимения",
+            "description": "Личные, притяжательные, указательные"
+          },
+          {
+            "id": "verb-to-be",
+            "title": "Глагол to be",
+            "description": "Спряжение и использование"
+          }
+        ]
+      },
+      {
+        "id": "basic-articles",
+        "title": "Артикли (базовые)",
+        "topics": [
+          {
+            "id": "indefinite-article",
+            "title": "Неопределённый артикль (a/an)",
+            "description": "Когда и как использовать"
+          },
+          {
+            "id": "definite-article-basic",
+            "title": "Определённый артикль (the)",
+            "description": "Базовые случаи использования"
+          }
+        ]
+      },
+      {
+        "id": "basic-prepositions",
+        "title": "Предлоги места и времени",
+        "topics": [
+          {
+            "id": "prepositions-in-on-at",
+            "title": "In / On / At",
+            "description": "Предлоги времени и места"
+          },
+          {
+            "id": "prepositions-of-place",
+            "title": "Предлоги места",
+            "description": "Behind, under, next to, between"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "advanced",
+    "title": "Для продвинутых",
+    "categories": [
+      {
+        "id": "tenses",
+        "title": "Времена",
+        "topics": [
+          {
+            "id": "present-simple",
+            "title": "Present Simple",
+            "description": "Настоящее простое время"
+          },
+          {
+            "id": "past-simple",
+            "title": "Past Simple",
+            "description": "Прошедшее простое время"
+          },
+          {
+            "id": "future-simple",
+            "title": "Future Simple",
+            "description": "Будущее простое время"
+          },
+          {
+            "id": "present-continuous",
+            "title": "Present Continuous",
+            "description": "Настоящее длительное время"
+          },
+          {
+            "id": "past-continuous",
+            "title": "Past Continuous",
+            "description": "Прошедшее длительное время"
+          },
+          {
+            "id": "future-continuous",
+            "title": "Future Continuous",
+            "description": "Будущее длительное время"
+          },
+          {
+            "id": "present-perfect",
+            "title": "Present Perfect",
+            "description": "Настоящее совершенное время"
+          },
+          {
+            "id": "past-perfect",
+            "title": "Past Perfect",
+            "description": "Прошедшее совершенное время"
+          },
+          {
+            "id": "future-perfect",
+            "title": "Future Perfect",
+            "description": "Будущее совершенное время"
+          },
+          {
+            "id": "present-perfect-continuous",
+            "title": "Present Perfect Continuous",
+            "description": "Настоящее совершенное длительное время"
+          },
+          {
+            "id": "past-perfect-continuous",
+            "title": "Past Perfect Continuous",
+            "description": "Прошедшее совершенное длительное время"
+          },
+          {
+            "id": "future-perfect-continuous",
+            "title": "Future Perfect Continuous",
+            "description": "Будущее совершенное длительное время"
+          }
+        ]
+      },
+      {
+        "id": "advanced-articles",
+        "title": "Артикли (детально)",
+        "topics": [
+          {
+            "id": "definite-article-detailed",
+            "title": "Определённый артикль",
+            "description": "Все случаи использования the"
+          },
+          {
+            "id": "indefinite-article-detailed",
+            "title": "Неопределённый артикль",
+            "description": "Нюансы использования a/an"
+          },
+          {
+            "id": "zero-article",
+            "title": "Нулевой артикль",
+            "description": "Когда артикль не нужен"
+          },
+          {
+            "id": "articles-with-geography",
+            "title": "Артикли с географией",
+            "description": "Страны, города, реки, озёра"
+          }
+        ]
+      },
+      {
+        "id": "modal-verbs",
+        "title": "Модальные глаголы",
+        "topics": [
+          {
+            "id": "can-could",
+            "title": "Can / Could",
+            "description": "Возможность и разрешение"
+          },
+          {
+            "id": "may-might",
+            "title": "May / Might",
+            "description": "Вероятность и предположение"
+          },
+          {
+            "id": "must-should",
+            "title": "Must / Should",
+            "description": "Обязанность и совет"
+          },
+          {
+            "id": "will-would",
+            "title": "Will / Would",
+            "description": "Будущее и вежливые просьбы"
+          }
+        ]
+      },
+      {
+        "id": "conditionals",
+        "title": "Conditionals (условные предложения)",
+        "topics": [
+          {
+            "id": "zero-conditional",
+            "title": "Zero Conditional",
+            "description": "Общие истины (if + present)"
+          },
+          {
+            "id": "first-conditional",
+            "title": "First Conditional",
+            "description": "Реальные ситуации в будущем"
+          },
+          {
+            "id": "second-conditional",
+            "title": "Second Conditional",
+            "description": "Нереальные ситуации в настоящем"
+          },
+          {
+            "id": "third-conditional",
+            "title": "Third Conditional",
+            "description": "Нереальные ситуации в прошлом"
+          },
+          {
+            "id": "mixed-conditionals",
+            "title": "Mixed Conditionals",
+            "description": "Смешанные типы"
+          }
+        ]
+      },
+      {
+        "id": "prepositions-advanced",
+        "title": "Предлоги (продвинутый уровень)",
+        "topics": [
+          {
+            "id": "prepositions-of-time",
+            "title": "Предлоги времени",
+            "description": "At, in, on, by, until, since, for"
+          },
+          {
+            "id": "prepositions-of-place",
+            "title": "Предлоги места",
+            "description": "In, on, at, under, above, across"
+          },
+          {
+            "id": "prepositions-of-movement",
+            "title": "Предлоги движения",
+            "description": "To, into, through, across, along"
+          },
+          {
+            "id": "phrasal-prepositions",
+            "title": "Фразовые предлоги",
+            "description": "Because of, due to, in spite of"
+          }
+        ]
+      },
+      {
+        "id": "passive-voice",
+        "title": "Пассивный залог",
+        "topics": [
+          {
+            "id": "passive-present",
+            "title": "Present Passive",
+            "description": "Пассив в настоящем времени"
+          },
+          {
+            "id": "passive-past",
+            "title": "Past Passive",
+            "description": "Пассив в прошедшем времени"
+          },
+          {
+            "id": "passive-future",
+            "title": "Future Passive",
+            "description": "Пассив в будущем времени"
+          },
+          {
+            "id": "passive-modals",
+            "title": "Passive with Modals",
+            "description": "Пассив с модальными глаголами"
+          }
+        ]
+      },
+      {
+        "id": "reported-speech",
+        "title": "Косвенная речь",
+        "topics": [
+          {
+            "id": "reported-statements",
+            "title": "Утверждения",
+            "description": "Перевод утверждений в косвенную речь"
+          },
+          {
+            "id": "reported-questions",
+            "title": "Вопросы",
+            "description": "Перевод вопросов в косвенную речь"
+          },
+          {
+            "id": "reported-commands",
+            "title": "Команды и просьбы",
+            "description": "Перевод повелительного наклонения"
+          }
+        ]
+      }
+    ]
+  }
+]
