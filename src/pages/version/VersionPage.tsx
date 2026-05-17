@@ -1,4 +1,4 @@
-import { getAllVersions } from "../data/versions";
+import { getAllVersions } from "../../data/versions";
 
 export function VersionPage() {
   const allVersions = getAllVersions();

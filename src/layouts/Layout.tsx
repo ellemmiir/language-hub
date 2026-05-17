@@ -1,7 +1,7 @@
 import { Outlet, useLocation } from "react-router-dom";
-import { Sidebar } from "../components/Sidebar";
-import { TopBar } from "../components/TopBar";
-import { AccentBlob } from "../components/AccentBlob";
+import { Sidebar } from "../components/layout/Sidebar";
+import { TopBar } from "../components/layout/TopBar";
+import { AccentBlob } from "../components/common/AccentBlob";
 
 export function Layout() {
   const location = useLocation();

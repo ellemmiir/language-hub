@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { NavIcon } from "./NavIcon";
-import { Tooltip } from "./Tooltip";
+import { Tooltip } from "../common/Tooltip";
 
 type NavButtonProps = {
   onClick: () => void;

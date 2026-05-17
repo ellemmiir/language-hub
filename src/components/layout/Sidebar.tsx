@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import { CollapseButton } from "./CollapseButton";
-import { Logo } from "./Logo";
-import { NavButton } from "./NavButton";
+import { Logo } from "../common/Logo";
+import { NavButton } from "../navigation/NavButton";
 import { SectionDivider } from "./SectionDivider";
 
 export function Sidebar() {

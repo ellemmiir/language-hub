@@ -1,13 +1,13 @@
 import { useState } from "react";
-import { Sidebar } from "./components/Sidebar";
-import { TopBar } from "./components/TopBar";
-import { AccentBlob } from "./components/AccentBlob";
-import { HomePage } from "./pages/HomePage";
-import { GrammarPage } from "./pages/GrammarPage";
-import { TextPage } from "./pages/TextPage";
-import { DictionaryPage } from "./pages/DictionaryPage";
-import { VersionPage } from "./pages/VersionPage";
-import { AboutPage } from "./pages/AboutPage";
+import { Sidebar } from "./components/layout/Sidebar";
+import { TopBar } from "./components/layout/TopBar";
+import { AccentBlob } from "./components/common/AccentBlob";
+import { HomePage } from "./pages/home/HomePage";
+import { GrammarPage } from "./pages/grammar/GrammarPage";
+import { TextPage } from "./pages/texts/TextPage";
+import { DictionaryPage } from "./pages/dictionary/DictionaryPage";
+import { VersionPage } from "./pages/version/VersionPage";
+import { AboutPage } from "./pages/about/AboutPage";
 
 function App() {
   const [currentPage] = useState("home");

@@ -1,6 +1,6 @@
-import { UpdateWidget } from "../components/UpdateWidget";
+import { UpdateWidget } from "../../components/widgets/UpdateWidget";
 import { useNavigate } from "react-router-dom";
-import { useDictionaryStats } from "../hooks/useDictionaryStats";
+import { useDictionaryStats } from "../../hooks/useDictionaryStats";
 
 export function HomePage() {
   const navigate = useNavigate();

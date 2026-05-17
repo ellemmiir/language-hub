@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { getLatestVersion } from "../data/versions";
+import { getLatestVersion } from "../../data/versions";
 
 export function UpdateWidget() {
   const navigate = useNavigate();
@@ -90,7 +90,7 @@ export function UpdateWidget() {
       </div>
 
       <button
-        onClick={() => navigate("version")}
+        onClick={() => navigate("/versions")}
         className={`
           mt-4 px-3 py-2 rounded-md 
           transition-colors duration-200 

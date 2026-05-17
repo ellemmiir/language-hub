@@ -1,5 +1,5 @@
-import type { Phrase } from "../data/phrases";
-import { HighlightText } from "./HighlightText";
+import type { Phrase } from "../../data/phrases";
+import { HighlightText } from "../common/HighlightText";
 
 type PhraseCardProps = {
   phrase: Phrase;

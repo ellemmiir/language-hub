@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { GrammarColumn } from "../components/grammar/GrammarColumn";
-import grammarData from "../data/grammarTopics.json";
+import { GrammarColumn } from "../../components/grammar/GrammarColumn";
+import grammarData from "../../data/grammarTopics.json";
 import { MagnifyingGlassIcon } from "@heroicons/react/24/outline";
 
 export function GrammarPage() {

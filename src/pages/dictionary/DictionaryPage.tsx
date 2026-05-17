@@ -1,11 +1,11 @@
 import React, { useState, useMemo, useRef, useCallback } from "react";
 import { Virtuoso, type VirtuosoHandle } from "react-virtuoso";
-import { phrases, type Phrase } from "../data/phrases";
-import { PhraseCard } from "../components/PhraseCard";
+import { phrases, type Phrase } from "../../data/phrases";
+import { PhraseCard } from "../../components/dictionary/PhraseCard";
 import { MagnifyingGlassIcon } from "@heroicons/react/24/outline";
-import { useDebounce } from "../hooks/useDebounce";
-import { AlphabetScroll } from "../components/AlphabetScroll";
-import { useDictionaryStats } from "../hooks/useDictionaryStats";
+import { useDebounce } from "../../hooks/useDebounce";
+import { AlphabetScroll } from "../../components/dictionary/AlphabetScroll";
+import { useDictionaryStats } from "../../hooks/useDictionaryStats";
 
 const MemoizedPhraseCard = React.memo(
   ({ phrase, searchQuery }: { phrase: Phrase; searchQuery: string }) => (

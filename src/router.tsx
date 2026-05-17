@@ -1,12 +1,12 @@
 import { createBrowserRouter } from "react-router-dom";
 import { Layout } from "./layouts/Layout";
-import { HomePage } from "./pages/HomePage";
-import { GrammarPage } from "./pages/GrammarPage";
-import { GrammarTopicPage } from "./pages/GrammarTopicPage";
-import { TextPage } from "./pages/TextPage";
-import { DictionaryPage } from "./pages/DictionaryPage";
-import { VersionPage } from "./pages/VersionPage";
-import { AboutPage } from "./pages/AboutPage";
+import { HomePage } from "./pages/home/HomePage";
+import { GrammarPage } from "./pages/grammar/GrammarPage";
+import { GrammarTopicPage } from "./pages/grammar/GrammarTopicPage";
+import { TextPage } from "./pages/texts/TextPage";
+import { DictionaryPage } from "./pages/dictionary/DictionaryPage";
+import { VersionPage } from "./pages/version/VersionPage";
+import { AboutPage } from "./pages/about/AboutPage";
 
 export const router = createBrowserRouter([
   {
