@@ -34,7 +34,7 @@ export function UserButton() {
     <div className="relative inline-block">
       <button
         ref={buttonRef}
-        className="p-2 rounded-lg transition-all duration-200 hover:bg-grey-200 dark:hover:bg-grey-600"
+        className="p-2 rounded-lg transition-all duration-200 hover:bg-grey-200 dark:hover:bg-grey-600 cursor-pointer"
         onClick={handleClick}
         title="Профиль"
       >

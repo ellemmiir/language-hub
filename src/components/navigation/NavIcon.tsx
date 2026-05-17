@@ -1,3 +1,5 @@
+import type { SectionId } from "../../config/sections";
+
 import {
   HomeIcon,
   AcademicCapIcon,
@@ -16,7 +18,7 @@ import {
 } from "@heroicons/react/24/solid";
 
 type NavIconProps = {
-  name: "home" | "grammar" | "text" | "version" | "dictionary" | "about";
+  name: SectionId;
   isActive: boolean;
   className?: string;
 };
@@ -29,8 +31,8 @@ export function NavIcon({
   const icons = {
     home: { outline: HomeIcon, solid: HomeIconSolid },
     grammar: { outline: AcademicCapIcon, solid: AcademicCapIconSolid },
-    text: { outline: BookOpenIcon, solid: BookOpenIconSolid },
-    version: {
+    texts: { outline: BookOpenIcon, solid: BookOpenIconSolid },
+    versions: {
       outline: ClipboardDocumentListIcon,
       solid: ClipboardDocumentListIconSolid,
     },

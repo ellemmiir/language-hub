@@ -1,12 +1,13 @@
 import { useState } from "react";
 import { NavIcon } from "./NavIcon";
 import { Tooltip } from "../common/Tooltip";
+import type { SectionId } from "../../config/sections";
 
 type NavButtonProps = {
   onClick: () => void;
   isActive: boolean;
   isCollapsed?: boolean;
-  iconName: "home" | "grammar" | "text" | "version" | "dictionary" | "about";
+  iconName: SectionId;
   children: React.ReactNode;
 };
 

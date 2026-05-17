@@ -14,7 +14,6 @@ type AccordionCategoryProps = {
     topics: Topic[];
   };
   onTopicClick: (topicId: string) => void;
-  isCollapsed?: boolean;
 };
 
 export function AccordionCategory({

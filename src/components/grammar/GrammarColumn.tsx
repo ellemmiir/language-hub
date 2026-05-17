@@ -17,7 +17,6 @@ export function GrammarColumn({
   title,
   categories,
   onTopicClick,
-  isCollapsed = false,
 }: GrammarColumnProps) {
   return (
     <div className="rounded-md">
@@ -30,7 +29,6 @@ export function GrammarColumn({
             key={category.id}
             category={category}
             onTopicClick={onTopicClick}
-            isCollapsed={isCollapsed}
           />
         ))}
       </div>

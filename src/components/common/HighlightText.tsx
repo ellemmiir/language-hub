@@ -5,9 +5,6 @@ type HighlightTextProps = {
   highlightClassName?: string;
 };
 
-// ${colors.accent.dictionary}
-// попробовать позже
-
 export function HighlightText({
   text,
   highlight,

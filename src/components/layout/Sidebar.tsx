@@ -1,13 +1,17 @@
 import { useState } from "react";
-import { useNavigate, useLocation } from "react-router-dom";
-import { CollapseButton } from "./CollapseButton";
+import { useNavigate } from "react-router-dom";
+import { useRoute } from "../../hooks/useRoute";
+import { MAIN_SECTIONS, SECONDARY_SECTIONS } from "../../config/sections";
+
 import { Logo } from "../common/Logo";
+import { CollapseButton } from "./CollapseButton";
 import { NavButton } from "../navigation/NavButton";
 import { SectionDivider } from "./SectionDivider";
 
 export function Sidebar() {
   const navigate = useNavigate();
-  const location = useLocation();
+  const { isActive } = useRoute();
+
   const [isCollapsed, setIsCollapsed] = useState(() => {
     const saved = localStorage.getItem("sidebarCollapsed");
     return saved === "true";
@@ -18,46 +22,7 @@ export function Sidebar() {
     localStorage.setItem("sidebarCollapsed", (!isCollapsed).toString());
   };
 
-  const currentPath = location.pathname;
-
-  const mainNavItems = [
-    { id: "", label: "Главная", iconName: "home" as const, path: "/" },
-    {
-      id: "grammar",
-      label: "Грамматика",
-      iconName: "grammar" as const,
-      path: "/grammar",
-    },
-    { id: "text", label: "Тексты", iconName: "text" as const, path: "/texts" },
-    {
-      id: "dictionary",
-      label: "Словарь",
-      iconName: "dictionary" as const,
-      path: "/dictionary",
-    },
-  ];
-
-  const secondaryNavItems = [
-    {
-      id: "version",
-      label: "Версии",
-      iconName: "version" as const,
-      path: "/versions",
-    },
-    {
-      id: "about",
-      label: "О проекте",
-      iconName: "about" as const,
-      path: "/about",
-    },
-  ];
-
   const sidebarWidth = isCollapsed ? "w-[80px]" : "w-[250px]";
-
-  const isActive = (path: string) => {
-    if (path === "/") return currentPath === "/";
-    return currentPath.startsWith(path);
-  };
 
   return (
     <div
@@ -76,15 +41,15 @@ export function Sidebar() {
 
       <nav className="flex-1">
         <ul className="list-none p-0 space-y-2">
-          {mainNavItems.map((item) => (
-            <li key={item.id}>
+          {MAIN_SECTIONS.map((section) => (
+            <li key={section.path}>
               <NavButton
-                onClick={() => navigate(item.path)}
-                isActive={isActive(item.path)}
+                onClick={() => navigate(section.path)}
+                isActive={isActive(section.path)}
                 isCollapsed={isCollapsed}
-                iconName={item.iconName}
+                iconName={section.id}
               >
-                {item.label}
+                {section.label}
               </NavButton>
             </li>
           ))}
@@ -93,15 +58,15 @@ export function Sidebar() {
         <SectionDivider isCollapsed={isCollapsed} title="Другое" />
 
         <ul className="list-none p-0 space-y-2">
-          {secondaryNavItems.map((item) => (
-            <li key={item.id}>
+          {SECONDARY_SECTIONS.map((section) => (
+            <li key={section.path}>
               <NavButton
-                onClick={() => navigate(item.path)}
-                isActive={isActive(item.path)}
+                onClick={() => navigate(section.path)}
+                isActive={isActive(section.path)}
                 isCollapsed={isCollapsed}
-                iconName={item.iconName}
+                iconName={section.id}
               >
-                {item.label}
+                {section.label}
               </NavButton>
             </li>
           ))}
