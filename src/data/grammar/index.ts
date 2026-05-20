@@ -1,0 +1,12 @@
+export { presentSimple } from "./present-simple";
+export { pastSimple } from "./past-simple";
+export { futureSimple } from "./future-simple";
+export { presentContinuous } from "./present-continuous";
+export { pastContinuous } from "./past-continuous";
+export { futureContinuous } from "./future-continuous";
+export { presentPerfect } from "./present-perfect";
+export { pastPerfect } from "./past-perfect";
+export { futurePerfect } from "./future-perfect";
+export { presentPerfectContinuous } from "./present-perfect-continuous";
+export { pastPerfectContinuous } from "./past-perfect-continuous";
+export { futurePerfectContinuous } from "./future-perfect-continuous";

@@ -1,161 +1,452 @@
 [
   {
-    "id": "better-late-than-never",
-    "phrase": "Better late than never",
-    "russianEquivalent": "Лучше поздно, чем никогда",
-    "meaning": "Лучше сделать что-то с опозданием, чем не сделать вообще.",
-    "example": "He finally apologized – better late than never.",
-    "tags": ["пословица"]
+    "id": "abbreviated-piece-of-nothing",
+    "phrase": "abbreviated piece of nothing",
+    "russianEquivalent": "пустое место",
+    "meaning": "Выражение для обозначения ничтожного или бесполезного человека, ничтожества.",
+    "example": "Bob doesn't think much of his new colleague. He calls him an abbreviated piece of nothing.",
+    "exampleTranslation": "Боб невысокого мнения о своём новом коллеге. Он называет его пустым местом.",
+    "tags": ["идиома", "сленг"]
   },
   {
-    "id": "bite-the-bullet",
-    "phrase": "Bite the bullet",
-    "meaning": "Сделать что-то неприятное, но неизбежное.",
-    "example": "You just have to bite the bullet and finish the report.",
+    "id": "to-the-best-of-ones-ability",
+    "phrase": "to the best of one's ability",
+    "russianEquivalent": "по мере возможности",
+    "meaning": "Делать что-то настолько хорошо, насколько позволяют силы и умения, выкладываться по полной.",
+    "example": "I felt nervous all through the interview, but I replied to the best of my ability.",
+    "exampleTranslation": "Я нервничал на протяжении всего собеседования, но отвечал по мере возможности.",
     "tags": ["идиома", "фразеологизм"]
   },
   {
-    "id": "break-a-leg",
-    "phrase": "Break a leg",
-    "russianEquivalent": "Ни пуха ни пера!",
-    "meaning": "Пожелание удачи перед выступлением, особенно в театре.",
-    "example": "You'll be great tonight. Break a leg!",
+    "id": "of-no-fixed-abode",
+    "phrase": "(of) no fixed abode",
+    "russianEquivalent": "без определённого места жительства",
+    "meaning": "Человек, у которого нет постоянного жилья, бомж или скиталец.",
+    "example": "A 30-year-old man of no fixed abode was charged with the burglary.",
+    "exampleTranslation": "30-летний мужчина без определённого места жительства был обвинён в краже со взломом.",
     "tags": ["идиома"]
   },
   {
-    "id": "burn-the-midnight-oil",
-    "phrase": "Burn the midnight oil",
-    "russianEquivalent": "Засидеться до утра",
-    "meaning": "Работать допоздна.",
-    "example": "She burned the midnight oil to finish the project.",
-    "tags": ["фразеологизм", "идиома"]
-  },
-  {
-    "id": "chill-out",
-    "phrase": "Chill out",
-    "russianEquivalent": "Расслабиться",
-    "meaning": "Успокоиться, перестать нервничать.",
-    "example": "Chill out, everything will be fine.",
-    "tags": ["сленг", "неологизм"]
-  },
-  {
-    "id": "cost-an-arm-and-a-leg",
-    "phrase": "Cost an arm and a leg",
-    "russianEquivalent": "Влететь в копеечку",
-    "meaning": "Стоить очень дорого.",
-    "example": "The new iPhone costs an arm and a leg.",
+    "id": "about-turnabout-face",
+    "phrase": "about turn/about face",
+    "russianEquivalent": "",
+    "meaning": "Полное изменение мнения, политики или курса, резкий разворот в убеждениях.",
+    "example": "The ambassador's recent declarations indicate an about turn in foreign policy.",
+    "exampleTranslation": "Недавние заявления посла указывают на крутой разворот во внешней политике.",
     "tags": ["идиома", "фразеологизм"]
   },
   {
-    "id": "couch-potato",
-    "phrase": "Couch potato",
-    "russianEquivalent": "Лежебока",
-    "meaning": "Человек, который много времени проводит перед телевизором.",
-    "example": "Don't be a couch potato, go outside!",
-    "tags": ["сленг", "идиома"]
-  },
-  {
-    "id": "digital-detox",
-    "phrase": "Digital detox",
-    "russianEquivalent": "Цифровой детокс",
-    "meaning": "Период времени, когда человек отказывается от гаджетов.",
-    "example": "I need a digital detox – no phone for a week.",
-    "tags": ["неологизм"]
-  },
-  {
-    "id": "fake-news",
-    "phrase": "Fake news",
-    "russianEquivalent": "Фейковые новости",
-    "meaning": "Ложная информация, представленная как правдивая.",
-    "example": "Don't believe everything you read – it's fake news.",
-    "tags": ["неологизм"]
-  },
-  {
-    "id": "hit-the-nail-on-the-head",
-    "phrase": "Hit the nail on the head",
-    "russianEquivalent": "Попасть в точку",
-    "meaning": "Точно понять или описать проблему.",
-    "example": "You hit the nail on the head with that analysis.",
+    "id": "above-all",
+    "phrase": "above all",
+    "russianEquivalent": "превыше всего",
+    "meaning": "Самое главное, важнее всего остального, в первую очередь.",
+    "example": "Good health is important, above all.",
+    "exampleTranslation": "Хорошее здоровье важно превыше всего.",
     "tags": ["идиома", "фразеологизм"]
   },
   {
-    "id": "hit-the-sack",
-    "phrase": "Hit the sack",
-    "russianEquivalent": "Отправиться спать",
-    "meaning": "Лечь спать, потому что очень устал.",
-    "example": "I'm exhausted, time to hit the sack.",
-    "tags": ["сленг", "идиома"]
+    "id": "above-and-beyond-the-call-of-duty",
+    "phrase": "above and beyond the call of duty",
+    "russianEquivalent": "сверх долга и положенного",
+    "meaning": "Проявлять исключительную смелость или усердие, выходящее за рамки обычных требований или ожиданий от работы.",
+    "example": "The fire-fighter received a medal for his action which went above and beyond the call of duty.",
+    "exampleTranslation": "Пожарный получил медаль за свои действия, которые выходили за рамки служебного долга.",
+    "tags": ["идиома", "фразеологизм"]
   },
   {
-    "id": "honesty-is-the-best-policy",
-    "phrase": "Honesty is the best policy",
-    "russianEquivalent": "Честность — лучшая политика",
-    "meaning": "Всегда лучше говорить правду.",
-    "example": "Just tell them what happened – honesty is the best policy.",
-    "tags": ["пословица"]
+    "id": "above-board",
+    "phrase": "above board",
+    "russianEquivalent": "",
+    "meaning": "Ситуация или бизнес, которые являются открытыми, честными и законными, без обмана и подводных камней.",
+    "example": "There are not secret negotiations. Our dealings have always been above board.",
+    "exampleTranslation": "Никаких тайных переговоров. Наши сделки всегда были честными и открытыми.",
+    "tags": ["идиома", "фразеологизм"]
   },
   {
-    "id": "let-the-cat-out-of-the-bag",
-    "phrase": "Let the cat out of the bag",
-    "russianEquivalent": "Проговориться",
-    "meaning": "Случайно раскрыть секрет.",
-    "example": "I let the cat out of the bag about the promotion.",
-    "tags": ["фразеологизм", "идиома"]
+    "id": "stay-above-the-fray",
+    "phrase": "(stay) above the fray",
+    "russianEquivalent": "держаться в стороне",
+    "meaning": "Держаться в стороне от конфликтов, споров или ссор, не ввязываться в потасовку.",
+    "example": "The boss always delegates controversial matters to a member of the staff so that he can stay above the fray.",
+    "exampleTranslation": "Начальник всегда поручает спорные вопросы кому-то из сотрудников, чтобы оставаться в стороне.",
+    "tags": ["идиома", "фразеологизм"]
   },
   {
-    "id": "once-in-a-blue-moon",
-    "phrase": "Once in a blue moon",
-    "russianEquivalent": "Раз в сто лет",
-    "meaning": "Очень редко.",
-    "example": "He visits his hometown once in a blue moon.",
-    "tags": ["фразеологизм", "идиома"]
+    "id": "above-the-law",
+    "phrase": "above the law",
+    "russianEquivalent": "закон не писан",
+    "meaning": "Кто-то, кто считает, что законы писаны не для него, и ему всё сходит с рук.",
+    "example": "Sometimes elected officials violate regulations because they think they are above the law.",
+    "exampleTranslation": "Иногда избираемые должностные лица нарушают правила, потому что считают, что им закон не писан.",
+    "tags": ["идиома", "фразеологизм"]
   },
   {
-    "id": "piece-of-cake",
-    "phrase": "Piece of cake",
-    "russianEquivalent": "Проще пареной репы",
-    "meaning": "Очень лёгкое дело.",
-    "example": "The exam was a piece of cake.",
+    "id": "not-above-doing-something",
+    "phrase": "(not) above (doing something)",
+    "russianEquivalent": "",
+    "meaning": "Говоря о ком-то, что он (not) above (doing something), означает, что этот человек (не) способен сделать нечто неприятное, постыдное или даже недопустимое.",
+    "example": "1. He's a good player, but unfortunately he's not above cheating in order to win. 2. She was not above begging to feed her children.",
+    "exampleTranslation": "1. Он хороший игрок, но, к сожалению, не гнушается жульничеством ради победы. 2. Ради того, чтобы накормить детей, она была готова даже просить милостыню.",
+    "tags": ["идиома", "фразеологизм"]
+  },
+  {
+    "id": "accident-waiting-to-happen",
+    "phrase": "accident waiting to happen",
+    "russianEquivalent": "ситуация на грани катастрофы",
+    "meaning": "Выражение описывает потенциально опасную ситуацию, часто вызванную халатностью или недостаточными мерами предосторожности.",
+    "example": "According to those who lived nearby, the explosion in the warehouse where the gas cylinders were stocked was an accident waiting to happen.",
+    "exampleTranslation": "По словам соседей, взрыв на складе, где хранились газовые баллоны, был аварией, которая неминуемо должна была произойти.",
+    "tags": ["идиома", "фразеологизм"]
+  },
+  {
+    "id": "accidentally-on-purpose",
+    "phrase": "accidentally on purpose",
+    "russianEquivalent": "",
+    "meaning": "Так говорят о поступке, который совершают намеренно, но делают вид, что это вышло случайно.",
+    "example": "I accidentally-on-purpose erased his email address so I couldn't contact him again.",
+    "exampleTranslation": "Я якобы случайно удалил его адрес электронной почты — на самом деле нарочно, чтобы больше ему не писать.",
+    "tags": ["идиома", "оксюморон"]
+  },
+  {
+    "id": "more-by-accident-than-by-design",
+    "phrase": "more by accident than (by) design",
+    "russianEquivalent": "скорее случайно, чем намеренно",
+    "meaning": "Если что-то происходит больше случайно, чем по замыслу, это значит, что у действия не было намеренного плана.",
+    "example": "I became an interpreter more by accident than design; nobody else could speak the language of the refugees.",
+    "exampleTranslation": "Я стал переводчиком скорее случайно, чем по собственной воле: просто больше никто не говорил на языке беженцев.",
+    "tags": ["идиома", "фразеологизм"]
+  },
+  {
+    "id": "an-accomplished-fact",
+    "phrase": "an accomplished fact",
+    "russianEquivalent": "свершившийся факт / поставить перед фактом",
+    "meaning": "Фразу используют, чтобы показать, что дело уже сделано или завершено до того, как те, кого оно касается, успевают вмешаться или изменить ситуацию.",
+    "example": "The company moved the factory overseas without consulting the workers, presenting them with an accomplished fact.",
+    "exampleTranslation": "Компания перенесла завод за границу, не посоветовавшись с рабочими, поставив их перед фактом.",
     "tags": ["идиома"]
   },
   {
-    "id": "practice-makes-perfect",
-    "phrase": "Practice makes perfect",
-    "russianEquivalent": "Повторение — мать учения",
-    "meaning": "Регулярная практика ведёт к совершенству.",
-    "example": "Don't worry if you're not great yet – practice makes perfect.",
-    "tags": ["пословица"]
-  },
-  {
-    "id": "spill-the-beans",
-    "phrase": "Spill the beans",
-    "russianEquivalent": "Выдать секрет",
-    "meaning": "Раскрыть конфиденциальную информацию.",
-    "example": "He spilled the beans about the surprise party.",
-    "tags": ["идиома", "фразеологизм"]
-  },
-  {
-    "id": "strike-while-the-iron-is-hot",
-    "phrase": "Strike while the iron is hot",
-    "russianEquivalent": "Куй железо, пока горячо",
-    "meaning": "Использовать благоприятный момент.",
-    "example": "If you have a good idea, act now – strike while the iron is hot.",
-    "tags": ["поговорка", "фразеологизм"]
-  },
-  {
-    "id": "under-the-weather",
-    "phrase": "Under the weather",
-    "russianEquivalent": "Приболеть",
-    "meaning": "Плохо себя чувствовать.",
-    "example": "I'm feeling a bit under the weather today.",
+    "id": "of-your-own-accord",
+    "phrase": "of your own accord",
+    "russianEquivalent": "по собственной воле ",
+    "meaning": "Сделать что-то по собственной воле, спонтанно, охотно, без чьего-либо влияния или принуждения.",
+    "example": "The boy went of his own accord to see the owner and admitted breaking the window.",
+    "exampleTranslation": "Мальчик сам пошёл к хозяину и признался, что разбил окно.",
     "tags": ["идиома"]
   },
   {
-    "id": "when-in-rome-do-as-the-romans-do",
-    "phrase": "When in Rome, do as the Romans do",
-    "russianEquivalent": "В чужой монастырь со своим уставом не ходят",
-    "meaning": "Нужно подстраиваться под местные обычаи.",
-    "example": "I don't like tea, but when in Rome...",
-    "tags": ["поговорка"]
+    "id": "no-accounting-for-taste",
+    "phrase": "no accounting for taste",
+    "russianEquivalent": "о вкусах не спорят",
+    "meaning": "Это выражение используют, чтобы выразить удивление по поводу чужих предпочтений или антипатий.",
+    "example": "She fell in love with a guy who is short, fat, bald and poor ... there's no accounting for taste!",
+    "exampleTranslation": "Она влюбилась в парня — низкого, толстого, лысого и бедного... о вкусах не спорят!",
+    "tags": ["идиома", "поговорка"]
+  },
+  {
+    "id": "ace-a-test",
+    "phrase": "ace a test",
+    "russianEquivalent": "",
+    "meaning": "Сдать на отлично / получить высший балл",
+    "example": "Maria's parents said she could go to the party if she aced her English test.",
+    "exampleTranslation": "Родители Марии сказали, что она может пойти на вечеринку, если сдаст английский на отлично.",
+    "tags": ["идиома", "сленг"]
+  },
+  {
+    "id": "ace-in-the-hole",
+    "phrase": "ace in the hole",
+    "russianEquivalent": "козырь в рукаве",
+    "meaning": "Покерный термин, означающий преимущество или ресурс, который держат в тайне до тех пор, пока он не понадобится.",
+    "example": "Our candidate has an ace in the hole that will ensure victory ... you'll see!",
+    "exampleTranslation": "У нашего кандидата есть козырь в рукаве, который обеспечит победу... вот увидите!",
+    "tags": ["идиома", "термин"]
+  },
+  {
+    "id": "have-an-ace-up-your-sleeve",
+    "phrase": "have an ace up your sleeve",
+    "russianEquivalent": "иметь козырь в рукаве",
+    "meaning": "Если у вас есть козырь в рукаве, значит, у вас есть что-то про запас, что поможет вам получить преимущество.",
+    "example": "I'm well prepared for the negotiations. I've got an ace up my sleeve.",
+    "exampleTranslation": "Я хорошо подготовлен к переговорам. У меня есть козырь в рукаве.",
+    "tags": ["идиома", "термин"]
+  },
+  {
+    "id": "hold-all-the-aces",
+    "phrase": "hold all the aces",
+    "russianEquivalent": "",
+    "meaning": "Фраза означает, что человек находится в очень сильной позиции, потому что у него больше преимуществ, чем у кого-либо ещё.",
+    "example": "Given the high unemployment figures in some countries, employers hold all the aces.",
+    "exampleTranslation": "Учитывая высокие показатели безработицы в некоторых странах, все козыри в руках работодателей",
+    "tags": ["идиома"]
+  },
+  {
+    "id": "achilles-heel",
+    "phrase": "Achilles heel",
+    "russianEquivalent": "Ахиллесова пята",
+    "meaning": "Это выражение обозначает уязвимое место, которое может привести к поражению или провалу.",
+    "example": "He's extremely intelligent, but his inability to speak in public is his Achilles heel.",
+    "exampleTranslation": "Он чрезвычайно умён, но его неспособность выступать на публике — его Ахиллесова пята.",
+    "tags": ["идиома", "фразеологизм"]
+  },
+  {
+    "id": "acid-test",
+    "phrase": "acid test",
+    "russianEquivalent": "",
+    "meaning": "Проверить что-либо/кого-либо на прочность",
+    "example": "The training course was very interesting but the acid test will come when I start my new job.",
+    "exampleTranslation": "Учебный курс был очень интересным, но когда я приступлю к своей новой работе, тогда и узнаем пройду ли я тест на прочность.",
+    "tags": ["идиома"]
+  },
+  {
+    "id": "acquired-taste",
+    "phrase": "acquired taste",
+    "russianEquivalent": "",
+    "meaning": "\"acquired taste\" - то, что вам не нравится с первой попытки, но начинает нравиться позже.",
+    "example": "Tony has always loved olives, but for me it was an acquired taste.",
+    "exampleTranslation": "Тони всегда любил оливки, а мне они понравились только спустя время.",
+    "tags": ["идиома", "фразеологизм"]
+  },
+  {
+    "id": "act-of-god",
+    "phrase": "act of God",
+    "russianEquivalent": "форс-мажор",
+    "meaning": "Этот термин обозначает природное событие или несчастный случай, за который никто не несёт ответственности (например, землетрясение, удар молнии и т.д.).",
+    "example": "The insurance company refused to pay for the damage because it was caused by an act of God.",
+    "exampleTranslation": "Страховая компания отказалась выплачивать компенсацию за ущерб, поскольку он был вызван форс-мажорными обстоятельствами.",
+    "tags": ["идиома", "термин"]
+  },
+  {
+    "id": "get-your-act-together",
+    "phrase": "get your act together",
+    "russianEquivalent": "взяться за ум",
+    "meaning": "Если вы говорите кому-то «возьмись за ум», вы имеете в виду, что ему нужно более эффективно организовать свои дела, чтобы добиться успеха.",
+    "example": "You'd better get your act together if you want to find a job!",
+    "exampleTranslation": "Тебе лучше взяться за ум, если хочешь найти работу!",
+    "tags": ["идиома", "фразеологизм"]
+  },
+  {
+    "id": "add-fuel-to-the-flames",
+    "phrase": "add fuel to the flames",
+    "russianEquivalent": "подливать масла в огонь",
+    "meaning": "Если вы подливаете масла в огонь, вы делаете или говорите что-то, что делает трудную ситуацию ещё хуже.",
+    "example": "He forgot their wedding anniversary, and his apologies only added fuel to the flames.",
+    "exampleTranslation": "Он забыл про годовщину свадьбы, и его извинения только подлили масла в огонь.",
+    "tags": ["идиома", "фразеологизм"]
+  },
+  {
+    "id": "add-insult-to-injury",
+    "phrase": "add insult to injury",
+    "russianEquivalent": " \"добить\"  / сделать только хуже",
+    "meaning": "Если вы «add insult to injury», вы делаете или говорите что-то, что делает плохую ситуацию ещё хуже, либо ещё больше раните чувства того, кто уже и так пострадал.",
+    "example": "Sally refused Harry’s invitation, and to add insult to injury, she asked him not to call her again.",
+    "exampleTranslation": "Салли отказалась от приглашения Гарри и, чтобы еще больше оскорбить его, попросила его больше ей не звонить.",
+    "tags": ["идиома", "фразеологизм"]
+  },
+  {
+    "id": "much-ado-about-nothing",
+    "phrase": "much ado about nothing",
+    "russianEquivalent": "много шума из ничего / буря в стакане воды",
+    "meaning": "Когда люди поднимают много шума из ничего, они устраивают большую суету по поводу чего-то неважного.",
+    "example": "There was a meeting to discuss the name for the new playground. \"Much ado about nothing.\" - said my Dad!",
+    "exampleTranslation": "Было собрание, чтобы обсудить название для новой детской площадки. «Много шума из ничего», — сказал мой папа!",
+    "tags": ["идиома", "фразеологизм", "поговорка"]
+  },
+  {
+    "id": "afraid-of-ones-own-shadow",
+    "phrase": "afraid of one's own shadow",
+    "russianEquivalent": "собственной тени бояться",
+    "meaning": "Человек, который боится собственной тени, чрезмерно нервничает или пугается вещей необоснованно.",
+    "example": "I've never seen anyone so easily scared. She's afraid of her own shadow!",
+    "exampleTranslation": "Я никогда не видел такого пугливого человека. Она собственной тени боится!",
+    "tags": ["идиома", "фразеологизм"]
+  },
+  {
+    "id": "after-all",
+    "phrase": "after all",
+    "russianEquivalent": "в конце концов",
+    "meaning": "Это выражение означает «в конце концов, несмотря на предыдущие трудности или сомнения». А также «учитывая то, что произошло».",
+    "example": "We don’t have to invite them to our wedding. After all, they didn’t invite us!",
+    "exampleTranslation": "Мы не обязаны приглашать их на нашу свадьбу. В конце концов, они нас не приглашали!",
+    "tags": ["идиома"]
+  },
+  {
+    "id": "after-the-fact",
+    "phrase": "after the fact",
+    "russianEquivalent": "",
+    "meaning": "Когда что-то делается слишком поздно, после того как событие (особенно преступление или авария) уже произошло.",
+    "example": "He said he realized he had put people in danger, but that was of no help after the fact.",
+    "exampleTranslation": "Он сказал, что осознал, что подверг людей опасности, но это уже не имело значения.",
+    "tags": ["идиома"]
+  },
+  {
+    "id": "against-ones-better-judgement",
+    "phrase": "against one's better judgement",
+    "russianEquivalent": "назло здравому смыслу / вопреки собственному благоразумию",
+    "meaning": "Если вы делаете что-то, несмотря на то, что считаете это неразумным, вы действуете вопреки собственному благоразумию.",
+    "example": "Bob persuaded her to go by car, against her better judgement, and she regretted it as soon as she saw the heavy traffic.",
+    "exampleTranslation": "Боб уговорил её поехать на машине вопреки её здравому смыслу, и она пожалела об этом, как только увидела огромные пробки.",
+    "tags": ["идиома", "фразеологизм"]
+  },
+  {
+    "id": "against-the-clock",
+    "phrase": "against the clock",
+    "russianEquivalent": "",
+    "meaning": "Когда вы делаете что-то на время или торопитесь.",
+    "example": "They are working against the clock to have the presentation ready for Monday.",
+    "exampleTranslation": "Они работают в спешке, чтобы подготовить презентацию к понедельнику.",
+    "tags": ["идиома", "фразеологизм"]
+  },
+  {
+    "id": "ahead-of-the-pack",
+    "phrase": "ahead of the pack",
+    "russianEquivalent": "быть в числе первых / быть на шаг впереди",
+    "meaning": "Если человек или организация опережают других, они лучше или успешнее своих конкурентов.",
+    "example": "Our products will have to be more innovative if we want to stay ahead of the pack.",
+    "exampleTranslation": "Наши продукты должны быть более инновационными, если мы хотим быть на шаг впереди конкурентов.",
+    "tags": ["идиома"]
+  },
+  {
+    "id": "if-it-aint-broke-dont-fix-it",
+    "phrase": "if it ain't broke don't fix it",
+    "russianEquivalent": "",
+    "meaning": "Это выражение означает, что если система или метод работает относительно хорошо, не стоит ничего менять.",
+    "example": "Our alarm system isn’t great but we’re not touching it. As the saying goes: if it ain't broke, don't fix it!",
+    "exampleTranslation": "Наша сигнализация не идеальна, но мы её не трогаем. Как говорится: «Работает - и Слава Богу».",
+    "tags": ["идиома", "поговорка", "пословица"]
+  },
+  {
+    "id": "alarm-bells-start-to-ring",
+    "phrase": "alarm bells start to ring / set the alarm bells ringing",
+    "russianEquivalent": "бить тревогу / тревожный звоночек",
+    "meaning": "Фраза означает, что есть поводы для беспокойства.",
+    "example": "Alarm bells started to ring when the old lady next door didn't open her shutters all day and didn't answer her phone.",
+    "exampleTranslation": "Тревожные звоночки зазвенели, когда пожилая дама по соседству весь день не открывала ставни и не отвечала на телефонные звонки.",
+    "tags": ["идиома"]
+  },
+  {
+    "id": "all-along",
+    "phrase": "all along",
+    "russianEquivalent": "",
+    "meaning": "Если что-то существовало или было где-то всё это время, значит, оно было там всегда, с самого начала.",
+    "example": "I had been looking for my keys for some time before I realized they had been in my pocket all along.",
+    "exampleTranslation": "Я довольно долго искал ключи, пока не понял, что они всё это время были у меня в кармане.",
+    "tags": ["идиома"]
+  },
+  {
+    "id": "all-the-better-for-something",
+    "phrase": "all the better for (something)",
+    "russianEquivalent": "",
+    "meaning": "Если вам что-то идёт на пользу, вы получаете от этого выгоду или чувствуете себя намного лучше в результате.",
+    "example": "You'll be all the better for a good night's rest.",
+    "exampleTranslation": "От хорошего ночного отдыха тебе будет только лучше.",
+    "tags": ["идиома", "фразеологизм"]
+  },
+  {
+    "id": "all-brawn-and-no-brain",
+    "phrase": "all brawn and no brain",
+    "russianEquivalent": "сила есть — ума не надо",
+    "meaning": "Про того, кто физически очень силён, но не очень умён.",
+    "example": "He's an impressive player to watch, but he's all brawn and no brain.",
+    "exampleTranslation": "За ним интересно наблюдать как за игроком, но он весь из себя одни мускулы, а ума ни на грамм.",
+    "tags": ["идиома", "фразеологизм"]
+  },
+  {
+    "id": "all-clear",
+    "phrase": "all clear",
+    "russianEquivalent": "зелёный свет",
+    "meaning": "Если вам разрешают что-то сделать после проверки, удостоверившись, что всё в порядке, вы получаете «озеленый свет» или «добро».",
+    "example": "Dad says he's going to play golf again as soon as he gets the all clear from his doctor.",
+    "exampleTranslation": "Папа говорит, что снова пойдёт играть в гольф, как только получит добро от врача.",
+    "tags": ["идиома"]
+  },
+  {
+    "id": "all-but",
+    "phrase": "all but",
+    "russianEquivalent": "почти / фактически / за исключением того, что",
+    "meaning": "Выражение «all but» означает «практически полностью».",
+    "example": "In some small towns train stations have all but disappeared.",
+    "exampleTranslation": "В некоторых маленьких городках железнодорожные станции практически исчезли.",
+    "tags": ["идиома", "наречное выражение"]
+  },
+  {
+    "id": "all-downhill",
+    "phrase": "all downhill / downhill all the way",
+    "russianEquivalent": "дело техники / дальше легче",
+    "meaning": "Достичь цели очень легко по сравнению с прежними трудностями.",
+    "example": "The hardest part for the burglars was turning off the alarm system. After that it was all downhill.",
+    "exampleTranslation": "Самым сложным для грабителей было отключить сигнализацию. Дальше всё было делом техники.",
+    "tags": ["идиома"]
+  },
+  {
+    "id": "be-all-for-something",
+    "phrase": "(be) all for (something)",
+    "russianEquivalent": "полностью за / обеими руками за",
+    "meaning": "Если вы говорите, что вы «полностью за» что-то, вы полностью поддерживаете это или согласны на 100%.",
+    "example": "The teacher suggested an end-of-the-year picnic and I’m all for it.",
+    "exampleTranslation": "Учитель предложил устроить пикник в конце года, и я обеими руками за.",
+    "tags": ["идиома"]
+  },
+  {
+    "id": "be-all-ears",
+    "phrase": "(be) all ears",
+    "russianEquivalent": "весь внимание / весь во внимании",
+    "meaning": "Слушать внимательно.",
+    "example": "Of course I want to know - I'm all ears!",
+    "exampleTranslation": "Конечно, я хочу знать — я весь внимание!",
+    "tags": ["идиома", "фразеологизм"]
+  },
+  {
+    "id": "all-hands-on-deck",
+    "phrase": "all hands on deck",
+    "russianEquivalent": "",
+    "meaning": "Когда нужна помощь всех, каждый должен помогать, особенно когда работы много и времени мало.",
+    "example": "As the opening day approached, it was all hands on deck to have everything ready in time.",
+    "exampleTranslation": "День открытия приближался, а потом все были на подхвате, чтобы успеть всё вовремя.",
+    "tags": ["идиома"]
+  },
+  {
+    "id": "all-in-a-days-work",
+    "phrase": "all in a day's work",
+    "russianEquivalent": "дело привычное / обычное дело",
+    "meaning": "Если кто-то говорит, что определённая задача — «обычное дело», это означает, что он привык это делать, даже если это может показаться неприятным или трудным; это часть его работы или обычной деятельности.",
+    "example": "Dealing with emergencies is all in a day’s work for firefighters.",
+    "exampleTranslation": "Бороться с чрезвычайными ситуациями для пожарных — обычное дело.",
+    "tags": ["идиома", "фразеологизм"]
+  },
+  {
+    "id": "all-in-your-head",
+    "phrase": "all in your head",
+    "russianEquivalent": "плод воображения",
+    "meaning": "Что-то нереальное, плод воображения. ",
+    "example": "Don't be silly. Nobody is trying to harm you. It's all in your head!",
+    "exampleTranslation": "Не будь глупым. Никто не хочет тебе навредить. Это плод твоего воображения!",
+    "tags": ["идиома", "фразеологизм"]
+  },
+  {
+    "id": "all-hell-broke-loose",
+    "phrase": "all hell broke loose",
+    "russianEquivalent": "и разверзся ад",
+    "meaning": "Если вы говорите, что «ад разверзся», вы имеете в виду, что последовала внезапная гневная или шумная реакция на что-то.",
+    "example": "All hell broke loose when it was announced that the plant was going to close down.",
+    "exampleTranslation": "Когда объявили, что завод закроют, начался настоящий ад.",
+    "tags": ["идиома", "фразеологизм"]
+  },
+  {
+    "id": "all-mouth-and-no-trousers",
+    "phrase": "all mouth and no trousers",
+    "russianEquivalent": "много говорить — мало делать / трепло (разг.)",
+    "meaning": "Так говорят о человеке, который много говорит о том, что сделает, но никогда и ничего не делает.",
+    "example": "He keeps saying he's going to resign and travel around the world, but he's all mouth and no trousers.",
+    "exampleTranslation": "Он всё говорит, что уволится и отправится путешествовать по миру, но это всё пустые слова.",
+    "tags": ["идиома"]
+  },
+  {
+    "id": "all-sizzle-and-no-steak",
+    "phrase": "all sizzle and no steak",
+    "russianEquivalent": "много шума — мало толку / а разговоров-то было",
+    "meaning": "Что-то разочаровывает или не соответствует ожиданиям.",
+    "example": "Because of his electoral promises, which so far he has failed to keep, many people refer to the new president as 'all sizzle and no steak'.",
+    "exampleTranslation": "Из-за его предвыборных обещаний, которые он пока не выполнил, многие люди называют нового президента «треплом».",
+    "tags": ["идиома", "сленг"]
   }
 ]

@@ -128,12 +128,31 @@ export function DictionaryPage() {
 
       {filteredPhrases.length === 0 ? (
         <div className="text-center py-16 flex-1">
-          <p className="text-lg text-grey-500 dark:text-grey-400 mb-2">
-            🔍 Ничего не найдено
+          <p className="text-lg text-grey-700 dark:text-grey-300 font-medium mb-2">
+            Ничего не найдено
           </p>
-          <p className="text-sm text-grey-400 dark:text-grey-600">
+
+          <p className="text-sm text-grey-500 dark:text-grey-400 mb-4">
             Попробуйте изменить запрос или выбрать другой фильтр
           </p>
+
+          {searchQuery && (
+            <div className="mt-4 pt-4 border-t border-grey-200 dark:border-grey-700 max-w-md mx-auto">
+              <p className="text-sm text-grey-500 dark:text-grey-400 mb-2">
+                💡 Не нашли нужную фразу?
+              </p>
+              <p className="text-sm text-grey-500 dark:text-grey-500">
+                Если вы уверены, что фраза существует,{" "}
+                <a
+                  href="mailto:language@hub.com?subject=Предложение фразы: {encodeURIComponent(searchQuery)}&body=Фраза: {encodeURIComponent(searchQuery)}%0A%0AЗначение: %0A%0AПример:"
+                  className="text-yellow-600 dark:text-yellow-400 hover:underline font-medium"
+                >
+                  напишите мне
+                </a>
+                , и я добавлю её в словарь.
+              </p>
+            </div>
+          )}
         </div>
       ) : (
         <div className="flex-1 min-h-0 flex gap-6">

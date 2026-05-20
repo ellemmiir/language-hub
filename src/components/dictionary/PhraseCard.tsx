@@ -69,10 +69,10 @@ export function PhraseCard({ phrase, searchQuery = "" }: PhraseCardProps) {
         </span>
         <div className="mt-1 space-y-1">
           <p className="text-sm text-grey-700 dark:text-grey-300 italic">
-            "{phrase.example}"
+            {phrase.example}
           </p>
           {phrase.exampleTranslation && (
-            <p className="text-sm text-grey-500 dark:text-grey-300">
+            <p className="text-sm text-grey-500 dark:text-grey-300 italic">
               {phrase.exampleTranslation}
             </p>
           )}
