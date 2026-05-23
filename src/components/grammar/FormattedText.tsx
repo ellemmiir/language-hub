@@ -13,6 +13,7 @@ export function FormattedText({
   highlightClassName = "text-blue-600 dark:text-blue-400 font-medium",
   boldClassName = "font-bold text-black dark:text-white",
 }: FormattedTextProps) {
+  // Сначала обрабатываем ссылки [[text|target]]
   const linkRegex = /\[\[(.*?)\|(.*?)\]\]/g;
   const linkParts: Array<{ text: string; target: string | null }> = [];
   let lastIndex = 0;
@@ -33,49 +34,71 @@ export function FormattedText({
     linkParts.push({ text: text.slice(lastIndex), target: null });
   }
 
-  const renderPart = (partText: string) => {
+  // Функция для обработки одного куска текста (без ссылок)
+  const renderPlainText = (plainText: string) => {
+    // Сначала обрабатываем подсветку [[...]]
     const highlightRegex = /\[\[(.*?)\]\]/g;
-    const boldRegex = /\{\{(.*?)\}\}/g;
-    const subParts: Array<{
+    const highlightParts: Array<{
       text: string;
       type: "normal" | "highlight" | "bold";
     }> = [];
-    let subLastIndex = 0;
-    let subMatch;
+    let hLastIndex = 0;
+    let hMatch;
 
-    while ((subMatch = highlightRegex.exec(partText)) !== null) {
-      if (subMatch.index > subLastIndex) {
-        subParts.push({
-          text: partText.slice(subLastIndex, subMatch.index),
+    while ((hMatch = highlightRegex.exec(plainText)) !== null) {
+      if (hMatch.index > hLastIndex) {
+        highlightParts.push({
+          text: plainText.slice(hLastIndex, hMatch.index),
           type: "normal",
         });
       }
-      subParts.push({ text: subMatch[1], type: "highlight" });
-      subLastIndex = subMatch.index + subMatch[0].length;
+      highlightParts.push({ text: hMatch[1], type: "highlight" });
+      hLastIndex = hMatch.index + hMatch[0].length;
     }
 
-    if (subLastIndex < partText.length) {
-      const remaining = partText.slice(subLastIndex);
-      let boldLastIndex = 0;
-      let boldMatch;
+    if (hLastIndex < plainText.length) {
+      highlightParts.push({
+        text: plainText.slice(hLastIndex),
+        type: "normal",
+      });
+    }
 
-      while ((boldMatch = boldRegex.exec(remaining)) !== null) {
-        if (boldMatch.index > boldLastIndex) {
-          subParts.push({
-            text: remaining.slice(boldLastIndex, boldMatch.index),
+    // Обрабатываем жирный текст {{...}} в каждом куске
+    const result: Array<{
+      text: string;
+      type: "normal" | "highlight" | "bold";
+    }> = [];
+
+    for (const part of highlightParts) {
+      if (part.type !== "normal") {
+        result.push(part);
+        continue;
+      }
+
+      const boldRegex = /\{\{(.*?)\}\}/g;
+      let bLastIndex = 0;
+      let bMatch;
+
+      while ((bMatch = boldRegex.exec(part.text)) !== null) {
+        if (bMatch.index > bLastIndex) {
+          result.push({
+            text: part.text.slice(bLastIndex, bMatch.index),
             type: "normal",
           });
         }
-        subParts.push({ text: boldMatch[1], type: "bold" });
-        boldLastIndex = boldMatch.index + boldMatch[0].length;
+        result.push({ text: bMatch[1], type: "bold" });
+        bLastIndex = bMatch.index + bMatch[0].length;
       }
 
-      if (boldLastIndex < remaining.length) {
-        subParts.push({ text: remaining.slice(boldLastIndex), type: "normal" });
+      if (bLastIndex < part.text.length) {
+        result.push({
+          text: part.text.slice(bLastIndex),
+          type: "normal",
+        });
       }
     }
 
-    return subParts.map((part, idx) => {
+    return result.map((part, idx) => {
       if (part.type === "highlight") {
         return (
           <span key={idx} className={highlightClassName}>
@@ -106,7 +129,7 @@ export function FormattedText({
             {part.text}
           </Link>
         ) : (
-          renderPart(part.text)
+          renderPlainText(part.text)
         ),
       )}
     </span>

@@ -40,7 +40,7 @@ export function ConjugationTable({ data }: ConjugationTableProps) {
 
               <td className="border border-gray-200 dark:border-gray-700 px-4 py-2">
                 <FormattedText
-                  text={row.affirmative}
+                  text={row.negative}
                   className="font-medium text-gray-700 dark:text-gray-300"
                 />
                 <div className="text-xs text-gray-400 dark:text-gray-500 mt-1">
@@ -50,7 +50,7 @@ export function ConjugationTable({ data }: ConjugationTableProps) {
 
               <td className="border border-gray-200 dark:border-gray-700 px-4 py-2">
                 <FormattedText
-                  text={row.affirmative}
+                  text={row.question}
                   className="font-medium text-gray-700 dark:text-gray-300"
                 />
                 <div className="text-xs text-gray-400 dark:text-gray-500 mt-1">

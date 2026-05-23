@@ -1,5 +1,4 @@
 import type { GrammarTopic } from "../grammar/grammar";
-//готово
 export const pastContinuous: GrammarTopic = {
   id: "past-continuous",
   title: "Past Continuous",
@@ -13,14 +12,6 @@ export const pastContinuous: GrammarTopic = {
         translationAffirmative: "Я работал вчера в 5 вечера.",
         translationNegative: "Я не работал вчера в 5 вечера.",
         translationQuestion: "Я работал вчера в 5 вечера?",
-      },
-      {
-        affirmative: "He [[was]] working at 5pm yesterday.",
-        negative: "He [[was not]] working at 5pm yesterday.",
-        question: "[[Was]] he working at 5pm yesterday?",
-        translationAffirmative: "Он работал вчера в 5 вечера.",
-        translationNegative: "Он не работал вчера в 5 вечера.",
-        translationQuestion: "Он работал вчера в 5 вечера?",
       },
       {
         affirmative: "They [[were]] working at 5pm yesterday.",
@@ -40,68 +31,71 @@ export const pastContinuous: GrammarTopic = {
         {
           type: "description",
           content:
-            "Past Continuous (Past Progressive) образуется с помощью вспомогательного глагола was или were и простого причастия настоящего времени (первая форма глагола с окончанием -ing). Was и were – это формы прошедшего времени вспомогательного глагола to be..",
+            "{{Past Continuous (Past Progressive)}} образуется с помощью вспомогательного глагола {{was}} или {{were}} и простого причастия настоящего времени (первая форма глагола с окончанием {{-ing}}). {{Was}} и {{were}} – это формы прошедшего времени вспомогательного глагола {{to be}}.",
         },
         {
           type: "description",
-          content:
-            "Выбор нужной формы зависит от лица подлежащего (главного члена предложения). Was – используют, когда говорят о чем-то в единственном числе (I, he, she, it). Were – когда говорят о множестве людей и вещей (we, they) или используют местоимение you (ты, вы, вежливое Вы).",
+          content: "Выбор нужной формы зависит от подлежащего.",
         },
         {
           type: "examples",
           content: [
             {
-              en: "I was singing a song.",
-              ru: " Я пел песню.",
+              en: "I, he, she, it → [[was]] (существительное или местоимение в единственном числе)",
+              ru: "",
             },
             {
-              en: "She was drinking tea.",
-              ru: "Она пила чай.",
+              en: 'We, they, you → [[were]] (множественное число или вежливое "Вы")',
+              ru: "",
+            },
+          ],
+        },
+        {
+          type: "examples",
+          content: [
+            {
+              en: "It [[was]] gett[[ing]] darker outside.",
+              ru: "На улице темнело.",
             },
             {
-              en: "They were watching the movie. ",
-              ru: "Они смотрели кино.",
+              en: "The children [[were]] runn[[ing]] around the garden.",
+              ru: "Дети бегали по саду.",
             },
           ],
         },
         {
           type: "description",
           content:
-            "Все правила добавления окончания -ing рассмотрены в другой статье.",
+            "Правила добавления окончания {{-ing}} рассмотрены в другой теме.",
         },
         {
           type: "examples",
+          layout: "double",
           content: [
             {
-              en: "to enter → entering",
+              en: "to enter → enter[[ing]]",
+              ru: "",
+            },
+            { en: "to li[[e]] → l[[y]]ing", ru: "" },
+            {
+              en: "to tak[[e]] → tak[[i]]ng",
               ru: "",
             },
             {
-              en: "to lie → lying",
+              en: "to agr[[ee]] → agr[[ee]]ing",
+              ru: "",
+            },
+            { en: "to sa[[y]] → sa[[y]]ing", ru: "" },
+            {
+              en: "to rela[[x]] → rela[[x]]ing",
               ru: "",
             },
             {
-              en: "to take → taking",
+              en: "to ru[[n]] → ru[[nn]]ing",
               ru: "",
             },
             {
-              en: "to agree → agreeing",
-              ru: "",
-            },
-            {
-              en: "to say → saying",
-              ru: "",
-            },
-            {
-              en: "to relax → relaxing ",
-              ru: "",
-            },
-            {
-              en: "to run → running",
-              ru: "",
-            },
-            {
-              en: "to travel → travelling / traveling",
+              en: "to trave[[l]] → trave[[ll]]ing / trave[[l]]ing",
               ru: "",
             },
           ],
@@ -114,47 +108,48 @@ export const pastContinuous: GrammarTopic = {
         {
           type: "description",
           content:
-            "Отрицание в Past Continuous образуется путем добавления частицы not после вспомогательного глагола was или were.",
+            "Отрицание в {{Past Continuous}} образуется путем добавления частицы {{not}} после вспомогательного глагола {{was}} или {{were}}.",
         },
         {
           type: "examples",
           content: [
             {
-              en: "I was not singing a song.",
-              ru: "Я не пела песню.",
+              en: "He [[was not]] sleep[[ing]] when you called.",
+              ru: "Он не спал, когда ты позвонил.",
             },
             {
-              en: "She was not drinking tea.",
-              ru: "Она не пила чай.",
+              en: "The cat [[was not]] hid[[ing]] under the bed.",
+              ru: "Кот не прятался под кроватью.",
             },
             {
-              en: "They were not watching the movie.",
-              ru: "Они не смотрели кино.",
+              en: "We [[were not]] argu[[ing]] about that.",
+              ru: "Мы не спорили об этом.",
             },
+          ],
+        },
+        {
+          type: "description",
+          content: "Сокращения с глаголом {{to be}}:",
+        },
+        {
+          type: "examples",
+          content: [
+            {
+              en: "was = was[[n't]]",
+              ru: "",
+            },
+            { en: "were = were[[n't]]", ru: "" },
           ],
         },
         {
           type: "examples",
           content: [
             {
-              en: "was not = wasn’t (сокращение)",
-              ru: "",
+              en: "He was[[n't]] listening to the teacher.",
+              ru: "Он не слушал учителя.",
             },
             {
-              en: "I wasn’t playing at 5 p.m.",
-              ru: "Я не играл в 5 вечера.",
-            },
-          ],
-        },
-        {
-          type: "examples",
-          content: [
-            {
-              en: "were not = weren’t",
-              ru: "",
-            },
-            {
-              en: "You weren’t working when we came. ",
+              en: "You were[[n't]] working when we came.",
               ru: "Ты не работал, когда мы пришли.",
             },
           ],
@@ -167,44 +162,44 @@ export const pastContinuous: GrammarTopic = {
         {
           type: "description",
           content:
-            "Общий вопрос в Past Continuous образуется путем вынесения вспомогательного глагола was или were в начало предложения перед подлежащим.",
+            "Общий вопрос в {{Past Continuous}} образуется путем вынесения вспомогательного глагола was или were в начало предложения перед подлежащим.",
         },
         {
           type: "examples",
           content: [
             {
-              en: "Was I singing a song?",
-              ru: "Я пела песню?",
+              en: "[[Were]] we talk[[ing]] too loudly?",
+              ru: "Мы говорили слишком громко?",
             },
             {
-              en: "Was she drinking tea? ",
-              ru: " Она пила чай?",
+              en: "[[Was]] your mother cook[[ing]] dinner?",
+              ru: "Твоя мама готовила ужин?",
             },
             {
-              en: "Were they watching the movie?",
-              ru: "Они смотрели кино?",
+              en: "[[Were]] they wait[[ing]] for the bus?",
+              ru: "Они ждали автобус?",
             },
           ],
         },
         {
           type: "description",
           content:
-            "Специальный вопрос в Past Continuous образуется с помощью вопросительного слова или фразы, которая ставится в самом начале предложения. Дальнейший порядок слов такой же, как в общем вопросе для Past Continuous.",
+            "Специальный вопрос в {{Past Continuous}} образуется с помощью вопросительного слова или фразы, которая ставится в самом начале предложения. Дальнейший порядок слов такой же, как в общем вопросе для {{Past Continuous}}.",
         },
         {
           type: "examples",
           content: [
             {
-              en: "What was I singing at karaoke at the same time yesterday?",
-              ru: "Что я пел в караоке вчера в это же время?",
+              en: "[[What]] was he saying when I interrupted him?",
+              ru: "Что он говорил, когда я прервал его?",
             },
             {
-              en: "When was she doing her hometask?",
-              ru: " Когда она делала свое домашнее задание?",
+              en: "[[Where]] was she going so early in the morning?",
+              ru: "Куда она шла так рано утром?",
             },
             {
-              en: "Where were they watching the movie when the fire began? ",
-              ru: "Где они смотрели кино, когда начался пожар?",
+              en: "[[When]] were you planning to tell me the truth?",
+              ru: "Когда ты планировал сказать мне правду?",
             },
           ],
         },
@@ -216,21 +211,21 @@ export const pastContinuous: GrammarTopic = {
         {
           type: "description",
           content:
-            "Past Continuous используется для описания действия, которое длилось (находилось в процессе) в определённый момент в прошлом. Мы не знаем, когда действие началось и когда закончилось. Важно, что в этот конкретный момент оно происходило.",
+            "{{Past Continuous}} используется для описания действия, которое длилось (находилось в процессе) в определённый момент в прошлом. Мы не знаем, когда действие началось и когда закончилось. Важно, что в этот конкретный момент оно происходило.",
         },
         {
           type: "examples",
           content: [
             {
-              en: "At 8 p.m. last night, I was watching TV.",
-              ru: " В 8 часов вечера вчера я смотрел телевизор. (действие было в процессе именно в этот момент)",
+              en: "At 8 p.m. last night, I [[was]] watch[[ing]] TV.",
+              ru: " В 8 часов вечера вчера я смотрел телевизор. (Действие было в процессе именно в этот момент)",
             },
             {
-              en: "Yesterday at this time, she was flying to Paris.",
+              en: "Yesterday at this time, she [[was]] fly[[ing]] to Paris.",
               ru: "Вчера в это же время она летела в Париж.",
             },
             {
-              en: "What were you doing at 3 p.m. on Monday?",
+              en: "What [[were]] you do[[ing]] at 3 p.m. on Monday?",
               ru: "Что ты делал в 3 часа дня в понедельник?",
             },
           ],
@@ -243,30 +238,30 @@ export const pastContinuous: GrammarTopic = {
         {
           type: "description",
           content:
-            "Это классическое и самое частое употребление Past Continuous. Длительное действие (в Past Continuous) было прервано коротким действием (в Past Simple). Короткое действие как бы «врывается» в процесс.",
+            "Длительное действие (в {{Past Continuous}}) было прервано коротким действием (в {{Past Simple}}). Короткое действие как бы «врывается» в процесс.",
         },
         {
           type: "description",
           content:
-            "Структура: Past Continuous (длительное) + when + Past Simple (короткое)",
+            "Структура: {{Past Continuous}} (длительное) + {{when}} + {{Past Simple}} (короткое)",
         },
         {
           type: "examples",
           content: [
             {
-              en: "I was walking home when I met an old friend.",
+              en: "I [[was]] walk[[ing]] home when I [[met]] an old friend.",
               ru: " Я шёл домой, когда встретил старого друга.",
             },
             {
-              en: "She was having breakfast when the phone rang.",
+              en: "She [[was]] hav[[ing]] breakfast when the phone [[rang]].",
               ru: "Она завтракала, когда зазвонил телефон.",
             },
             {
-              en: "They were playing football when it started to rain.",
+              en: "They [[were]] play[[ing]] football when it [[started]] to rain.",
               ru: "Они играли в футбол, когда начался дождь.",
             },
             {
-              en: "He was driving to work when he saw the accident. ",
+              en: "He [[was]] driv[[ing]] to work when he [[saw]] the accident. ",
               ru: "Он ехал на работу, когда увидел аварию.",
             },
           ],
@@ -274,21 +269,21 @@ export const pastContinuous: GrammarTopic = {
         {
           type: "description",
           content:
-            "Слова while («в то время, как», «пока») и when («когда»)  подчеркивают разные части предложения. Как правило, после слова while следует Past Continuous, а за словом when следует Past Simple.",
+            "Слова {{while}} («в то время, как», «пока») и {{when}} («когда»)  подчеркивают разные части предложения. Как правило, после слова {{while}} следует {{Past Continuous}}, а за словом when следует {{Past Simple}}.",
         },
         {
           type: "examples",
           content: [
             {
-              en: "While I was reading, my brother was playing video games.",
+              en: "[[While]] I [[was]] read[[ing]], my brother was playing video games.",
               ru: "Пока я читал, мой брат играл в видеоигры. (оба действия длились одновременно)",
             },
             {
-              en: "When Dana broke the cup I was making some cakes.",
+              en: "[[When]] Dana [[broke]] the cup I was making some cakes.",
               ru: "Когда Дана разбила чашку, я готовила пирожные.",
             },
             {
-              en: "While I was eating my soup, he came home. ",
+              en: "[[While]] I [[was]] eat[[ing]] my soup, he came home. ",
               ru: "В то время, когда я ел суп, он пришел домой.",
             },
           ],
@@ -302,13 +297,13 @@ export const pastContinuous: GrammarTopic = {
         {
           type: "description",
           content:
-            "В рассказах, историях, анекдотах Past Continuous используется для описания фоновой обстановки — того, что происходило вокруг, когда началось основное событие (которое часто передаётся Past Simple).",
+            "В рассказах, историях, анекдотах {{Past Continuous}} используется для описания фоновой обстановки — того, что происходило вокруг, когда началось основное событие (которое часто передаётся {{Past Simple}}).",
         },
         {
           type: "examples",
           content: [
             {
-              en: "It was getting dark. The wind was blowing. Rain was falling heavily. Suddenly, I heard a strange noise. ",
+              en: "It was getting dark. The wind was blowing. Rain was falling heavily. Suddenly, I heard a strange noise.",
               ru: "Темнело. Ветер дул. Дождь сильно шёл. Внезапно я услышал странный шум.",
             },
             {
@@ -329,21 +324,21 @@ export const pastContinuous: GrammarTopic = {
         {
           type: "description",
           content:
-            "Past Continuous может выражать повторяющиеся действия в прошлом, которые вызывали раздражение, неодобрение или удивление у говорящего. В этом смысле Past Continuous обычно используется со словами always (всегда, постоянно), often (часто), constantly (постоянно). Эти слова ставятся между вспомогательным глаголом was или were и смысловым глаголом с окончанием -ing.",
+            "{{Past Continuous}} может выражать повторяющиеся действия в прошлом, которые вызывали раздражение, неодобрение или удивление у говорящего. В этом смысле {{Past Continuous}} обычно используется со словами {{always}} (всегда, постоянно), {{often}} (часто), {{constantly}} (постоянно). Эти слова ставятся между вспомогательным глаголом {{was}} или {{were}} и смысловым глаголом с окончанием {{-ing}}.",
         },
         {
           type: "examples",
           content: [
             {
-              en: "He was always losing his keys when he was young. ",
+              en: "He was [[always]] losing his keys when he was young. ",
               ru: "Он вечно терял свои ключи, когда был молодым.",
             },
             {
-              en: "She was constantly complaining about everything.",
+              en: "She was [[constantly]] complaining about everything.",
               ru: "Она постоянно жаловалась на всё подряд.",
             },
             {
-              en: "They were forever making noise late at night.",
+              en: "They were [[constantly]] making noise late at night.",
               ru: "Они вечно шумели поздно ночью.",
             },
           ],
@@ -356,53 +351,53 @@ export const pastContinuous: GrammarTopic = {
         {
           type: "description",
           content:
-            "Past Continuous показывает, что действие не было завершено. Оно началось, длилось какое-то время, но было прервано или просто не доведено до конца (в отличие от Past Simple, где действие завершено).",
+            "{{Past Continuous}} показывает, что действие не было завершено. Оно началось, длилось какое-то время, но было прервано или просто не доведено до конца (в отличие от {{Past Simple}}, где действие завершено).",
         },
         {
           type: "examples",
           content: [
             {
               en: "I was reading the book yesterday. ",
-              ru: "Я читал книгу вчера. (не факт, что дочитал; процесс)",
+              ru: "Я читал книгу вчера. (Не факт, что дочитал; процесс)",
             },
             {
               en: "I read the book yesterday.",
-              ru: " Я прочитал книгу вчера. (закончил, результат)",
+              ru: " Я прочитал книгу вчера. (Закончил, результат)",
             },
             {
               en: "They were building a new house last year.",
-              ru: "Они строили новый дом в прошлом году. (возможно, не достроили)",
+              ru: "Они строили новый дом в прошлом году. (Возможно, не достроили)",
             },
             {
               en: "They built a new house last year.",
-              ru: "Они построили новый дом в прошлом году. (завершили строительство)",
+              ru: "Они построили новый дом в прошлом году. (Завершили строительство)",
             },
           ],
         },
       ],
     },
     {
-      title: " Запланированные действия, которые не произошли",
+      title: "Запланированные действия, которые не произошли",
       blocks: [
         {
           type: "description",
           content:
-            "Past Continuous используется для описания запланированных действий в прошлом, которые не произошли. Обычно в таких предложениях используются глаголы mean (собираться, намереваться), intend (намереваться), hope (надеяться), expect (ожидать), think (думать), plan (планировать).",
+            "{{Past Continuous}} используется для описания запланированных действий в прошлом, которые не произошли. Обычно в таких предложениях используются глаголы {{mean}} (собираться, намереваться), {{intend}} (намереваться), {{hope}} (надеяться), {{expect}} (ожидать), {{think}} (думать), {{plan}} (планировать).",
         },
         {
           type: "examples",
           content: [
             {
-              en: "I was hoping to meet her at the bookstore but she didn’t come. ",
+              en: "I was [[hoping]] to meet her at the bookstore but she didn’t come. ",
               ru: "Я надеялся встретить её в книжном магазине, но она не пришла.",
             },
             {
-              en: "My mother was thinking of cooking a pie but we wanted some pizza.",
+              en: "My mother was [[thinking]] of cooking a pie but we wanted some pizza.",
               ru: "Моя мама думала приготовить пирог, но мы хотели пиццы.",
             },
             {
-              en: "Tom was planning to buy these tickets for the concert but forgot his wallet at home.",
-              ru: " Том собирался купить эти билеты на концерт, но забыл свой кошелек дома.",
+              en: "Tom was [[planning]] to buy these tickets for the concert but forgot his wallet at home.",
+              ru: "Том собирался купить эти билеты на концерт, но забыл свой кошелек дома.",
             },
           ],
         },
@@ -414,22 +409,22 @@ export const pastContinuous: GrammarTopic = {
         {
           type: "description",
           content:
-            "Past Continuous может использоваться в вопросах, чтобы сделать их более вежливыми, менее прямыми и менее навязчивыми, особенно когда мы интересуемся планами или намерениями собеседника.",
+            "{{Past Continuous}} может использоваться в вопросах, чтобы сделать их более вежливыми, менее прямыми и менее навязчивыми, особенно когда мы интересуемся планами или намерениями собеседника.",
         },
         {
           type: "examples",
           content: [
             {
               en: "What were you thinking about?",
-              ru: "О чём ты думал? (более мягко, чем What did you think?)",
+              ru: "О чём ты думал? (Более мягко, чем What did you think?)",
             },
             {
               en: "I was wondering if you could help me. ",
-              ru: "Мне было интересно, не могли бы вы мне помочь. (очень вежливая форма)",
+              ru: "Мне было интересно, не могли бы вы мне помочь. (Очень вежливая форма)",
             },
             {
               en: "Were you hoping to see him yesterday?",
-              ru: " Ты надеялся увидеть его вчера? (более деликатно, чем Did you hope?)",
+              ru: " Ты надеялся увидеть его вчера? (Более деликатно, чем Did you hope?)",
             },
           ],
         },

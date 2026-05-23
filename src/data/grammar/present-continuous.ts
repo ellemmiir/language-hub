@@ -1,5 +1,4 @@
 import type { GrammarTopic } from "../grammar/grammar";
-//готово
 export const presentContinuous: GrammarTopic = {
   id: "present-continuous",
   title: "Present Continuous",
@@ -40,7 +39,7 @@ export const presentContinuous: GrammarTopic = {
         {
           type: "description",
           content:
-            "Утвердительное предложение в Present Continuous образуется с помощью вспомогательного глагола [[to be]] в формах [[am]], [[is]] или [[are]], и смыслового глагола, к которому добавляется окончание [[-ing]].",
+            "Утвердительное предложение в {{Present Continuous}} образуется с помощью вспомогательного глагола \n {{to be}} в формах {{am}}, {{is}} или {{are}}, и смыслового глагола, к которому добавляется окончание {{-ing}}.",
         },
         {
           type: "description",
@@ -50,13 +49,13 @@ export const presentContinuous: GrammarTopic = {
           type: "examples",
           content: [
             {
-              en: "I → [[am]]",
-              ru: "(о себе)",
+              en: "I → [[am]] (о себе)",
+              ru: "",
             },
-            { en: "He, she, it → [[is]]", ru: "(единственное число)" },
+            { en: "He, she, it → [[is]] (единственное число)", ru: "" },
             {
-              en: "You, we, they → [[are]]",
-              ru: "(множественное число и 2-е лицо единственного числа)",
+              en: "You, we, they → [[are]] (множественное число и 2-е лицо единственного числа)",
+              ru: "",
             },
           ],
         },
@@ -76,10 +75,11 @@ export const presentContinuous: GrammarTopic = {
         },
         {
           type: "description",
-          content: "Сокращение с глаголом to be",
+          content: "Сокращения с глаголом {{to be}}:",
         },
         {
           type: "examples",
+          layout: "double",
           content: [
             {
               en: "I am = I’[[m]]",
@@ -94,7 +94,7 @@ export const presentContinuous: GrammarTopic = {
               en: "It is = It’[[s]]",
               ru: "",
             },
-            { en: "You are= You’[[re]]", ru: "" },
+            { en: "You are = You’[[re]]", ru: "" },
             {
               en: "We are = We’[[re]]",
               ru: "",
@@ -106,12 +106,30 @@ export const presentContinuous: GrammarTopic = {
           ],
         },
         {
+          type: "examples",
+          content: [
+            {
+              en: "I’[[m]] listen[[ing]] to music.",
+              ru: "Я слушаю музыку.",
+            },
+            {
+              en: "It’[[s]] rain[[ing]] outside.",
+              ru: "На улице идёт дождь.",
+            },
+            {
+              en: "We’[[re]] cook[[ing]] dinner.",
+              ru: "Мы готовим ужин.",
+            },
+          ],
+        },
+        {
           type: "description",
           content:
-            "Правила добавления окончания -ing рассмотрены в другой теме.",
+            "Правила добавления окончания {{-ing}} рассмотрены в другой теме.",
         },
         {
           type: "examples",
+          layout: "double",
           content: [
             {
               en: "to enter → enter[[ing]]",
@@ -149,38 +167,51 @@ export const presentContinuous: GrammarTopic = {
         {
           type: "description",
           content:
-            "Отрицательное предложение в Present Continuous образуется с помощью отрицательной частицы [[not]], которая ставится после вспомогательного глагола [[am]], [[is]] или [[are]].",
+            "Отрицательное предложение в {{Present Continuous}} образуется с помощью отрицательной частицы {{not}}, которая ставится после вспомогательного глагола {{am}}, {{is}} или {{are}}, и смыслового глагола, к которому добавляется окончание {{-ing}}.",
         },
         {
           type: "examples",
           content: [
             {
-              en: "I am not sleeping now because I have a lot of work",
+              en: "I [[am not]] sleep[[ing]] now because I have a lot of work.",
               ru: "Я сейчас не сплю, потому что у меня много работы.",
             },
             {
-              en: "She is not listening to the teacher at the moment.",
+              en: "She [[is not]] listen[[ing]] to the teacher at the moment.",
               ru: "Она не слушает учителя в данный момент.",
             },
             {
-              en: "They are not playing football today; the weather is bad.",
+              en: "They [[are not]] play[[ing]] football today; the weather is bad.",
               ru: "Они не играют в футбол сегодня — погода плохая.",
             },
           ],
         },
         {
           type: "description",
-          content: "Сокращение с [[not]]:",
+          content: "Сокращения с [[not]]:",
         },
         {
           type: "examples",
           content: [
             {
-              en: "He isn’t working right now; he's on a break.",
+              en: "is not = is[[n’t]]",
+              ru: "",
+            },
+            {
+              en: "are not = are[[n’t]]",
+              ru: "",
+            },
+          ],
+        },
+        {
+          type: "examples",
+          content: [
+            {
+              en: "He [[isn’t]] work[[ing]] right now; he's on a break.",
               ru: "Он сейчас не работает — у него перерыв.",
             },
             {
-              en: "We aren’t going to the party tonight.",
+              en: "We [[aren’t]] go[[ing]] to the party tonight.",
               ru: "Мы не идём на вечеринку сегодня вечером.",
             },
           ],
@@ -193,21 +224,21 @@ export const presentContinuous: GrammarTopic = {
         {
           type: "description",
           content:
-            "Вопросительное предложение в Present Continuous образуется  вынесением вспомогательного глагола [[am]], [[is]] или [[are]] в начало предложения перед подлежащим.",
+            "Вопросительное предложение в {{Present Continuous}} образуется вынесением вспомогательного глагола {{am}}, {{is}} или {{are}} в начало предложения перед подлежащим.",
         },
         {
           type: "examples",
           content: [
             {
-              en: "Am I speaking over the telephone?",
-              ru: "Я разговариваю по телефону?",
+              en: "[[Am]] I do[[ing]] this exercise correctly?",
+              ru: "Я правильно выполняю это упражнение?",
             },
             {
-              en: "Is he sleeping now?",
+              en: "[[Is]] he sleep[[ing]] now?",
               ru: "Он сейчас спит?",
             },
             {
-              en: "Are you listening to me?",
+              en: "[[Are]] you listen[[ing]] to me?",
               ru: "Ты меня слушаешь?",
             },
           ],
@@ -215,24 +246,38 @@ export const presentContinuous: GrammarTopic = {
         {
           type: "description",
           content:
-            "Специальный вопрос в Present Continuous образуется с помощью вопросительного слова, которое ставится в самом начале предложения. Дальнейший порядок слов такой же,  как в общем вопросе для Present Continuous.",
+            "{{Специальный вопрос}} в {{Present Continuous}} образуется с помощью вопросительного слова, которое ставится в самом начале предложения. Дальнейший порядок слов такой же, как в общем вопросе для {{Present Continuous}}.",
         },
         {
           type: "examples",
           content: [
             {
-              en: "What am I doing now? ",
+              en: "[[What am]] I look[[ing]] at?",
               ru: "Что я сейчас делаю?",
             },
             {
-              en: "Why is she crying in the corner?",
+              en: "[[Why is]] she cry[[ing]] in the corner?",
               ru: "Почему она плачет в углу?",
             },
             {
-              en: "Where are they going so early in the morning?",
+              en: "[[Where are]] they go[[ing]] so early in the morning?",
               ru: "Куда они идут так рано утром?",
             },
           ],
+        },
+        {
+          type: "note",
+          content: {
+            title: "Глаголы, не употребляющиеся в Continuous",
+            content:
+              "Глаголы чувств и восприятия ({{like}}, {{love}}, {{hate}}, {{know}}, {{understand}}) обычно не используются в {{Continuous}}.",
+            examples: [
+              {
+                en: "I like coffee.",
+                ru: "Я люблю кофе. (NOT I am liking coffee)",
+              },
+            ],
+          },
         },
       ],
     },
@@ -242,22 +287,26 @@ export const presentContinuous: GrammarTopic = {
         {
           type: "description",
           content:
-            "Present Continuous используется для описания действия, которое происходит прямо сейчас, в момент рассказа о нём.",
+            "{{Present Continuous}} используется для описания действия, которое происходит прямо сейчас, в момент рассказа о нём.",
         },
         {
           type: "examples",
           content: [
             {
-              en: "Look! It is snowing.",
+              en: "Look! It [[is]] snow[[ing]].",
               ru: "Смотри! Идёт снег.",
             },
             {
-              en: "The phone is ringing.",
+              en: "He’[[s]] fix[[ing]] his bike in the garage.",
+              ru: "Он чинит свой велосипед в гараже.",
+            },
+            {
+              en: "The phone [[is]] ring[[ing]].",
               ru: "Телефон звонит (прямо сейчас).",
             },
             {
-              en: "I’m washing my clothes at the moment.",
-              ru: "Я стираю свою одежду в данный момент.",
+              en: "I’[[m]] read[[ing]] an interesting book right now.",
+              ru: "Я читаю интересную книгу прямо сейчас.",
             },
           ],
         },
@@ -269,22 +318,22 @@ export const presentContinuous: GrammarTopic = {
         {
           type: "description",
           content:
-            "Present Continuous используется для описания временного действия, или такого действия, которое происходит не прямо сейчас, а в ближайшем временном промежутке – «around now» (примерно в это время).",
+            "{{Present Continuous}} используется для описания временного действия, или такого действия, которое происходит не прямо сейчас, а в ближайшем временном промежутке – {{«around now»}} (примерно в это время).",
         },
         {
           type: "examples",
           content: [
             {
-              en: "I am reading a very interesting book these days.",
+              en: "I [[am]] read[[ing]] a very interesting book these days.",
               ru: "Я читаю очень интересную книгу. (Возможно не прямо сейчас, а в целом на этой неделе)",
             },
             {
-              en: "He is staying with his friends until he finds an apartment.",
+              en: "He [[is]] stay[[ing]] with his friends until he finds an apartment.",
               ru: "Он живёт у друзей, пока не найдёт квартиру. (Временно)",
             },
             {
-              en: "I’m waiting for the parcel coming soon.",
-              ru: "Я жду посылку, которая скоро придет. (Я жду её в принципе, не прямо в данный момент)",
+              en: "We’[[re]] try[[ing]] to eat healthier nowadays.",
+              ru: "В последнее время мы стараемся питаться здоровее. (Не конкретно в эту минуту, а в целом)",
             },
           ],
         },
@@ -296,45 +345,22 @@ export const presentContinuous: GrammarTopic = {
         {
           type: "description",
           content:
-            "С помощью Present Continuous описываются действия, которые запланированы на ближайшее будущее. Особенно если речь идет о договоренности с указанием времени, места или билетов (а не просто о желании). Обычно используются глаголы движения (go, come, leave, arrive, meet, see, have).",
+            "С помощью {{Present Continuous}} описываются действия, которые запланированы на ближайшее будущее. Особенно если речь идет о договоренности с указанием времени, места или билетов (а не просто о желании). Обычно используются глаголы движения ({{go}}, {{come}}, {{leave}}, {{arrive}}, {{meet}}, {{see}}, {{have}}).",
         },
         {
           type: "examples",
           content: [
             {
-              en: "I am meeting my dentist at 3 p.m. tomorrow.",
-              ru: "Я встречаюсь со своим стоматологом завтра в 3 часа дня.",
-            },
-            {
-              en: "We are leaving on Friday.",
+              en: "We [[are]] leav[[ing]] on Friday.",
               ru: "Мы уезжаем в пятницу.",
             },
             {
-              en: "Kate and I are playing our new concert tonight.",
-              ru: "Сегодня вечером мы с Кейт играем наш новый концерт.",
-            },
-          ],
-        },
-      ],
-    },
-    {
-      title: "Меняющиеся обстоятельства",
-      blocks: [
-        {
-          type: "description",
-          content:
-            "Present Continuous используется для описания ситуаций, которые развиваются или меняются.",
-        },
-        {
-          type: "examples",
-          content: [
-            {
-              en: "The weather is changing so unexpectedly these days.",
-              ru: "Последнее время погода меняется так неожиданно.",
+              en: "Kate and I [[are]] go[[ing]] to a party this Saturday.",
+              ru: "Мы с Кейт идём на вечеринку в эту субботу.",
             },
             {
-              en: "More men are taking paternity leave nowadays. ",
-              ru: "В наши дни всё больше мужчин берут декретный отпуск.",
+              en: "I [[am]] meet[[ing]] my dentist at 3 p.m. tomorrow.",
+              ru: "Я встречаюсь со своим стоматологом завтра в 3 часа дня.",
             },
           ],
         },
@@ -346,18 +372,41 @@ export const presentContinuous: GrammarTopic = {
         {
           type: "description",
           content:
-            "Мы можем использовать Present Continuous для описания вещей, которые происходят постоянно, или характера человека, если это вызывает гнев (anger), раздражение (irritation) или надоедливость (annoyance). Часто используется со словами: always (всегда), constantly (постоянно), continually (непрерывно).",
+            "Мы можем использовать {{Present Continuous}} для описания вещей, которые происходят постоянно, или характера человека, если это вызывает гнев, раздражение или надоедливость. Часто используется со словами: {{always}} (всегда), {{constantly}} (постоянно), {{continually}} (непрерывно).",
         },
         {
           type: "examples",
           content: [
             {
-              en: "He is always losing his keys. ",
+              en: "He is [[always]] losing his keys. ",
               ru: "Он вечно теряет свои ключи.",
             },
             {
-              en: "You are constantly interrupting me!",
+              en: "You are [[constantly]] interrupting me!",
               ru: "Ты постоянно меня перебиваешь!",
+            },
+          ],
+        },
+      ],
+    },
+    {
+      title: "Меняющиеся обстоятельства",
+      blocks: [
+        {
+          type: "description",
+          content:
+            "{{Present Continuous}} используется для описания ситуаций, которые развиваются или меняются.",
+        },
+        {
+          type: "examples",
+          content: [
+            {
+              en: "The weather [[is]] chang[[ing]] so unexpectedly these days.",
+              ru: "Последнее время погода меняется так неожиданно.",
+            },
+            {
+              en: "More men [[are]] tak[[ing]] paternity leave nowadays. ",
+              ru: "В наши дни всё больше мужчин берут декретный отпуск.",
             },
           ],
         },
@@ -368,17 +417,18 @@ export const presentContinuous: GrammarTopic = {
       blocks: [
         {
           type: "description",
-          content: "Также Present Continuous выражает одновременные действия.",
+          content:
+            "Также {{Present Continuous}} выражает одновременные действия.",
         },
         {
           type: "examples",
           content: [
             {
-              en: "While I am cooking, my children are doing their homework. ",
+              en: "While I [[am]] cook[[ing]], my children [[are]] do[[ing]] their homework. ",
               ru: "Пока я готовлю, мои дети делают домашнюю работу.",
             },
             {
-              en: "I’m working and Ann is cooking now.",
+              en: "I’[[m]] work[[ing]] and Ann [[is]] cook[[ing]] now.",
               ru: "Я работаю сейчас, а Энн занимается готовкой.",
             },
           ],
@@ -393,6 +443,11 @@ export const presentContinuous: GrammarTopic = {
         "right now – прямо сейчас",
         "still – всё ещё",
         "currently – теперь",
+      ],
+      spaceAfter: true,
+    },
+    {
+      markers: [
         "at the moment – в этот момент",
         "at present – в настоящее время",
       ],
@@ -400,31 +455,13 @@ export const presentContinuous: GrammarTopic = {
     },
     {
       markers: [
-        "this morning – этим утром",
-        "this evening – этим вечером",
-        "this afternoon – сегодня после обеда",
-        "these days – в эти дни",
-      ],
-      spaceAfter: true,
-    },
-    {
-      markers: [
         "today – сегодня (днём)",
         "tonight – сегодня (вечером)",
+        "this morning – этим утром",
         "these days – на днях",
         "nowadays – в наши дни",
       ],
       spaceAfter: true,
-    },
-  ],
-  notes: [
-    {
-      title: "Глаголы, не употребляющиеся в Continuous",
-      content:
-        "Глаголы чувств и восприятия (like, love, hate, know, understand) обычно не используются в Continuous.",
-      examples: [
-        { en: "I like coffee (NOT I am liking coffee)", ru: "Я люблю кофе" },
-      ],
     },
   ],
 };

@@ -12,15 +12,18 @@ export function GrammarNote({ title, content, examples }: GrammarNoteProps) {
       <h3 className="text-lg font-semibold mb-2 text-blue-800 dark:text-blue-300">
         {title}
       </h3>
-      <FormattedText
-        text={content}
-        className="text-gray-700 dark:text-gray-300 mb-3"
-      />
+      <div className="mb-3">
+        <FormattedText
+          text={content}
+          className="text-gray-700 dark:text-gray-300 mb-3"
+        />
+      </div>
       {examples && (
         <ul className="space-y-1 pl-4">
           {examples.map((ex, idx) => (
-            <li key={idx} className="text-sm text-gray-600 dark:text-gray-400">
-              <span className="font-mono">{ex.en}</span> – {ex.ru}
+            <li key={idx} className=" text-gray-600 dark:text-gray-400">
+              <span className="mr-2 select-none">•</span>
+              <span>{ex.en}</span> – <span className="italic">{ex.ru}</span>
             </li>
           ))}
         </ul>

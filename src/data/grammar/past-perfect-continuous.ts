@@ -1,5 +1,4 @@
 import type { GrammarTopic } from "./grammar";
-//готово
 export const pastPerfectContinuous: GrammarTopic = {
   id: "past-perfect-continuous",
   title: "Past Perfect Continuous",
@@ -7,9 +6,9 @@ export const pastPerfectContinuous: GrammarTopic = {
   conjugationTable: {
     rows: [
       {
-        affirmative: "I had been working for an hour when he came.",
-        negative: "I hadn't been working for an hour when he came.",
-        question: "Had I been working for an hour when he came?",
+        affirmative: "I [[had been]] work[[ing]] for an hour when he came.",
+        negative: "I [[hadn't been]] work[[ing]] for an hour when he came.",
+        question: "[[Had]] I [[been]] work[[ing]] for an hour when he came?",
         translationAffirmative: "Я проработал час к моменту, когда он пришел.",
         translationNegative: "Я не проработал (целый) час, когда он пришел.",
         translationQuestion: "Я уже проработал (целый) час, когда он пришел?",
@@ -24,114 +23,113 @@ export const pastPerfectContinuous: GrammarTopic = {
         {
           type: "description",
           content:
-            "Утверждение в Past Perfect Continuous (Past Perfect Progressive) формируется с помощью комплексного вспомогательного глагола had been (форма Past Perfect от глагола to be), которая используется для всех лиц и чисел, и Present Participle (первой формы смыслового глагола с окончанием -ing).",
+            "Утверждение в {{Past Perfect Continuous}} ({{Past Perfect Progressive}}) формируется с помощью комплексного вспомогательного глагола {{had been}} (форма {{Past Perfect}} от глагола {{to be}}), которая используется для всех лиц и чисел, и {{Present Participle}} (первой формы смыслового глагола с окончанием {{-ing}}).",
         },
         {
           type: "examples",
           content: [
             {
-              en: "We had been searching for a room for two hours before we found a free one.",
-              ru: " Мы искали комнату два часа, пока не нашли свободную.",
+              en: "They [[had been]] walk[[ing]] for three hours before they finally reached the village.",
+              ru: "Они шли три часа, прежде чем наконец добрались до деревни.",
             },
             {
-              en: "I had been waiting for them all morning, so I felt annoyed. ",
-              ru: "Я ждала их все утро, так что была раздражена.",
+              en: "He [[had been]] learn[[ing]] Chinese for two years before he moved to Beijing.",
+              ru: "Он учил китайский два года до переезда в Пекин.",
             },
             {
-              en: "She’d been driving a car for an hour before she came to the gas station.  ",
-              ru: "Она вела машину час до того, как приехала на заправку.",
+              en: "She had been feeling sick all day, so she decided to see a doctor.",
+              ru: "Она чувствовала себя плохо весь день, поэтому решила пойти к врачу.",
             },
           ],
         },
         {
           type: "description",
-          content: "Сокращения had been:",
+          content: "Сокращения {{had been}}:",
         },
         {
           type: "examples",
           layout: "double",
           content: [
             {
-              en: "I had been = I’d been",
+              en: "I had been = I’[[d been]]",
               ru: "",
             },
             {
-              en: "He had been = He’d been",
+              en: "He had been = He’[[d been]]",
               ru: "",
             },
             {
-              en: "It had been = It’d been",
+              en: "It had been = It’[[d been]]",
               ru: "",
             },
             {
-              en: "They had been = They’d been",
+              en: "They had been = They’[[d been]]",
               ru: "",
             },
             {
-              en: "You had been = You’d been",
+              en: "You had been = You’[[d been]]",
               ru: "",
             },
             {
-              en: "She had been = She’d been",
+              en: "She had been = She’[[d been]]",
               ru: "",
             },
             {
-              en: "We had been = We’d been",
+              en: "We had been = We’[[d been]]",
               ru: "",
             },
           ],
         },
         {
-          type: "note",
-          content: {
-            title: "Важно об окончании -ing",
-            content:
-              "Обратите внимание, что финальная [[согласная|smt]] в [[ударных]] {{слогах}} (run → running) удваивается, а непроизносимая 'e' в конце глагола (take → taking) опускается.",
-            examples: [
-              { en: "begin → beginning", ru: "начинать" },
-              { en: "write → writing", ru: "писать" },
-            ],
-          },
+          type: "examples",
+          content: [
+            {
+              en: "I'[[d been]] wait[[ing]] for you for an hour before you showed up.",
+              ru: "Я ждал тебя час, прежде чем ты появился.",
+            },
+            {
+              en: "You'[[d been]] driv[[ing]] for too long without a break, so I offered to take over.",
+              ru: "Ты вёл машину слишком долго без перерыва, поэтому я предложил подменить тебя.",
+            },
+            {
+              en: "He'[[d been]] study[[ing]] all night, so he was exhausted in the morning.",
+              ru: "Он занимался всю ночь, поэтому утром был измучен.",
+            },
+          ],
         },
         {
           type: "description",
           content:
-            "Все правила добавления окончания -ing рассмотрены в другой статье.",
+            "Правила добавления окончания {{-ing}} рассмотрены в другой теме.",
         },
         {
           type: "examples",
           layout: "double",
           content: [
             {
-              en: "to enter → entering",
+              en: "to enter → enter[[ing]]",
+              ru: "",
+            },
+            { en: "to li[[e]] → l[[y]]ing", ru: "" },
+            {
+              en: "to tak[[e]] → tak[[i]]ng",
               ru: "",
             },
             {
-              en: "to lie → lying",
+              en: "to agr[[ee]] → agr[[ee]]ing",
+              ru: "",
+            },
+            { en: "to sa[[y]] → sa[[y]]ing", ru: "" },
+            {
+              en: "to rela[[x]] → rela[[x]]ing",
               ru: "",
             },
             {
-              en: "to take → taking",
+              en: "to ru[[n]] → ru[[nn]]ing",
               ru: "",
             },
             {
-              en: "to agree → agreeing",
-              ru: "",
-            },
-            {
-              en: "to say → saying",
-              ru: "",
-            },
-            {
-              en: "to relax → relaxing ",
-              ru: "",
-            },
-            {
-              en: "to run → running",
-              ru: "",
-            },
-            {
-              en: "to travel → travelling / traveling",
+              en: "to trave[[l]] → trave[[ll]]ing / trave[[l]]ing",
               ru: "",
             },
           ],
@@ -144,18 +142,18 @@ export const pastPerfectContinuous: GrammarTopic = {
         {
           type: "description",
           content:
-            "В Past Perfect Continuous отрицание формируется с помощью частицы not, которая ставится после вспомогательного глагола had.",
+            "В {{Past Perfect Continuous}} отрицание формируется с помощью частицы {{not}}, которая ставится после вспомогательного глагола {{had}}.",
         },
         {
           type: "examples",
           content: [
             {
-              en: "We had not been searching for a room for two hours before we found a free one.",
-              ru: "Мы не искали комнату два часа, пока не нашли свободную.",
+              en: "I [[had not been]] sleep[[ing]] well before I started taking melatonin.",
+              ru: "Я плохо спал до того, как начал принимать мелатонин.",
             },
             {
-              en: "I had not been waiting for them all morning, so I didn’t feel annoyed. ",
-              ru: "Я не ждала их все утро, так что я не была раздражена.",
+              en: "You [[had not been]] pay[[ing]] attention, so you missed the most important part.",
+              ru: "Ты не слушал, поэтому пропустил самую важную часть.",
             },
           ],
         },
@@ -163,12 +161,12 @@ export const pastPerfectContinuous: GrammarTopic = {
           type: "examples",
           content: [
             {
-              en: "had not = hadn't (сокращение)",
+              en: "had not = had[[n't]] (сокращение)",
               ru: "",
             },
             {
-              en: "She hadn’t been driving a car for an hour before she came to the gas station. ",
-              ru: " Она не вела машину час, до того как приехала на заправку.",
+              en: "They had[[n't]] been maintaining the building for years before it collapsed.",
+              ru: "Они не обслуживали здание годами до того, как оно рухнуло.",
             },
           ],
         },
@@ -180,44 +178,40 @@ export const pastPerfectContinuous: GrammarTopic = {
         {
           type: "description",
           content:
-            "Для того, чтобы задать общий вопрос в Past Perfect Continuous, необходимо первую часть комплексного вспомогательного глагола had вынести в начало предложения.",
+            "Для того, чтобы задать общий вопрос в {{Past Perfect Continuous}}, необходимо первую часть комплексного вспомогательного глагола had вынести в начало предложения.",
         },
         {
           type: "examples",
           content: [
             {
-              en: "Had we been searching for a room for two hours before we found a free one? ",
-              ru: " Мы искали комнату два часа, пока не нашли свободную?",
+              en: "[[Had]] you been working there long before you got promoted?",
+              ru: "Ты долго там работал до повышения?",
             },
             {
-              en: "Had she been waiting for them all morning, so she felt annoyed?",
-              ru: " Она ждала их все утро, так что была раздражена?",
-            },
-            {
-              en: "Had she been driving a car for an hour before she came to the gas station.  ",
-              ru: "Она вела машину час, до того как приехала на заправку?",
+              en: "[[Had]] they been living in London before they moved to Paris?",
+              ru: "Они жили в Лондоне до переезда в Париж?",
             },
           ],
         },
         {
           type: "description",
           content:
-            "Специальный вопрос в Past Perfect Continuous образуется с помощью вопросительного слова или фразы, которая ставится в самом начале предложения. Дальнейший порядок слов такой же, как в общем вопросе для Past Perfect Continuous.",
+            "Специальный вопрос в {{Past Perfect Continuous}} образуется с помощью вопросительного слова или фразы, которая ставится в самом начале предложения. Дальнейший порядок слов такой же, как в общем вопросе для {{Past Perfect Continuous}}.",
         },
         {
           type: "examples",
           content: [
             {
-              en: "What had we been doing for two hours before we found a free room? ",
-              ru: "Что мы делали два часа, пока не нашли свободную комнату?",
+              en: "[[What had]] they been discussing before the meeting was cancelled?",
+              ru: "Что они обсуждали до того, как встречу отменили?",
             },
             {
-              en: "Whom had I been waiting all morning then? ",
-              ru: "Кого я тогда ждала всё утро?",
+              en: "[[Where had]] you been hiding before they found you?",
+              ru: "Где ты прятался до того, как тебя нашли?",
             },
             {
-              en: "How long had she been driving a car before she came?",
-              ru: "Как долго она вела машину, до того как приехала?",
+              en: "[[Why had]] you been crying before he came in?",
+              ru: "Почему ты плакала до того, как он вошёл?",
             },
           ],
         },
@@ -230,50 +224,29 @@ export const pastPerfectContinuous: GrammarTopic = {
         {
           type: "description",
           content:
-            "Past Perfect Continuous используется для описания действия, которое началось в прошлом, длилось некоторое время и продолжало длиться до определённого момента в прошлом (или было прервано другим действием). Мы подчёркиваем длительность и процесс в прошлом до другого прошлого события.",
+            "{{Past Perfect Continuous}} используется для описания действия, которое началось в прошлом, длилось некоторое время и продолжало длиться до определённого момента в прошлом (или было прервано другим действием). Мы подчёркиваем длительность и процесс в прошлом до другого прошлого события.",
         },
         {
           type: "description",
           content:
-            "Структура: Past Perfect Continuous (длительное действие до момента в прошлом) + for / since",
+            "Структура: {{Past Perfect Continuous}} (длительное действие до момента в прошлом) + {{for}} / {{since}}",
         },
         {
           type: "examples",
           content: [
             {
-              en: "I had been waiting for the bus for 30 minutes when it finally arrived.",
-              ru: "Я ждал автобус 30 минут, когда он наконец приехал. (начал ждать в прошлом, ждал 30 минут, и в момент прибытия автобуса ожидание всё ещё продолжалось)",
+              en: "I [[had been]] wait[[ing]] for the bus [[for]] 30 minutes when it finally arrived.",
+              ru: "Я ждал автобус 30 минут, когда он наконец приехал. (Начал ждать в прошлом, ждал 30 минут, и в момент прибытия автобуса ожидание всё ещё продолжалось)",
             },
             {
-              en: "She had been working at the company for five years before she got promoted.",
+              en: "She [[had been]] work[[ing]] at the company [[for]] five years before she got promoted.",
               ru: "Она проработала в компании пять лет, прежде чем получила повышение.",
             },
             {
-              en: "They had been living in that house since 2010 when the fire broke out.",
+              en: "They [[had been]] liv[[ing]] in that house [[since]] 2010 when the fire broke out.",
               ru: "Они жили в том доме с 2010 года, когда начался пожар.",
             },
-            {
-              en: "He was tired because he had been running all morning.",
-              ru: "Он устал, потому что бегал всё утро.",
-            },
           ],
-        },
-        {
-          type: "description",
-          content:
-            "Пояснение: Past Perfect Continuous показывает, что действие длилось до другого действия в прошлом (или до другого момента в прошлом) и, возможно, продолжалось после него или было прервано.",
-        },
-        {
-          type: "note",
-          content: {
-            title: "Важно об окончании -ing",
-            content:
-              "Обратите внимание, что финальная [[согласная|smt]] в [[ударных]] {{слогах}} (run → running) удваивается, а непроизносимая 'e' в конце глагола (take → taking) опускается.",
-            examples: [
-              { en: "begin → beginning", ru: "начинать" },
-              { en: "write → writing", ru: "писать" },
-            ],
-          },
         },
       ],
     },
@@ -284,14 +257,14 @@ export const pastPerfectContinuous: GrammarTopic = {
         {
           type: "description",
           content:
-            "Past Perfect Continuous используется, чтобы объяснить причину состояния или ситуации в прошлом. Мы показываем, что предшествующее длительное действие привело к наблюдаемому результату.",
+            "{{Past Perfect Continuous}} используется, чтобы объяснить причину состояния или ситуации в прошлом. Мы показываем, что предшествующее длительное действие привело к наблюдаемому результату.",
         },
         {
           type: "examples",
           content: [
             {
-              en: "The ground was wet. It had been raining all night. ",
-              ru: "Земля была мокрая. Дождь шёл всю ночь. (дождь шёл до того, как мы увидели мокрую землю)",
+              en: "The ground was wet. It had been raining all night.",
+              ru: "Земля была мокрая. Дождь шёл всю ночь. (Дождь шёл до того, как мы увидели мокрую землю)",
             },
             {
               en: "She was out of breath. She had been running to catch the bus.",
@@ -304,9 +277,22 @@ export const pastPerfectContinuous: GrammarTopic = {
           ],
         },
         {
-          type: "description",
-          content:
-            "Отличие от Past Perfect (Simple): Past Perfect (Simple) подчёркивает факт завершения действия до другого прошлого действия. Past Perfect Continuous подчёркивает длительность и процесс, которые привели к результату.",
+          type: "note",
+          content: {
+            title: "Отличие от {{Past Perfect}}:",
+            content:
+              "{{Past Perfect}} подчёркивает факт завершения действия до другого прошлого действия. Past Perfect Continuous подчёркивает длительность и процесс, которые привели к результату.",
+            examples: [
+              {
+                en: "I had finished my homework by 8 p.m.",
+                ru: "Я закончил домашнюю работу к 8 вечера. (Важен факт: работа сделана, результат есть)",
+              },
+              {
+                en: "I had been doing my homework for two hours when you called.",
+                ru: "Я делал домашнюю работу два часа, когда ты позвонил. (Важна длительность: два часа процесса)",
+              },
+            ],
+          },
         },
       ],
     },
@@ -318,33 +304,46 @@ export const pastPerfectContinuous: GrammarTopic = {
         {
           type: "description",
           content:
-            "Past Perfect Continuous используется, чтобы показать, что длительное действие в прошлом было прервано другим (обычно коротким) действием. Длительное действие происходило до прерывания, а возможно, и продолжалось после него.",
+            "{{Past Perfect Continuous}} используется, чтобы показать, что длительное действие в прошлом было прервано другим (обычно коротким) действием. Длительное действие происходило до прерывания, а возможно, и продолжалось после него.",
         },
         {
           type: "examples",
           content: [
             {
-              en: "I had been sleeping for two hours when the phone rang.",
-              ru: "Я спал два часа, когда зазвонил телефон. (длительное действие — сон; прерывающее действие — звонок)",
+              en: "I [[had been sleeping]] for two hours when the phone [[rang]].",
+              ru: "Я спал два часа, когда зазвонил телефон. (Длительное действие — сон; прерывающее действие — звонок)",
             },
             {
-              en: "She had been cooking dinner when she cut her finger.",
+              en: "She [[had been cooking]] dinner when she [[cut]] her finger.",
               ru: "Она готовила ужин, когда порезала палец.",
             },
             {
-              en: "They had been driving for hours when they realized they were lost. ",
+              en: "They [[had been driving]] for hours when they [[realized]] they were lost. ",
               ru: " Они ехали несколько часов, когда поняли, что заблудились.",
             },
             {
-              en: "He had been talking on the phone when the boss walked in.",
+              en: "He [[had been talking]] on the phone when the boss [[walked]] in.",
               ru: "Он разговаривал по телефону, когда вошёл начальник.",
             },
           ],
         },
         {
-          type: "description",
-          content:
-            "Отличие от Past Continuous: Past Continuous (I was sleeping when the phone rang) показывает, что действие происходило в момент прерывания, но не подчёркивает, как долго оно длилось до этого. Past Perfect Continuous добавляет информацию о продолжительности (had been sleeping for two hours).",
+          type: "note",
+          content: {
+            title: "Отличие от {{Past Continuous}}:",
+            content:
+              "{{Past Continuous}} показывает, что действие происходило в момент прерывания, но не подчёркивает, как долго оно длилось до этого. {{Past Perfect Continuous}} добавляет информацию о продолжительности.",
+            examples: [
+              {
+                en: "I was sleeping when the phone rang.",
+                ru: "Я спал, когда зазвонил телефон. (Мы знаем, что я спал в момент звонка, но не знаем, как долго)",
+              },
+              {
+                en: "I had been sleeping for two hours when the phone rang.",
+                ru: "Я спал два часа, когда зазвонил телефон. (Мы знаем, что я спал именно два часа до звонка)",
+              },
+            ],
+          },
         },
       ],
     },
@@ -355,21 +354,21 @@ export const pastPerfectContinuous: GrammarTopic = {
         {
           type: "description",
           content:
-            "Past Perfect Continuous может описывать действие, которое длилось до определённого момента в прошлом и завершилось перед этим моментом, но при этом важна именно продолжительность действия.",
+            "{{Past Perfect Continuous}} может описывать действие, которое длилось до определённого момента в прошлом и завершилось перед этим моментом, но при этом важна именно продолжительность действия.",
         },
         {
           type: "examples",
           content: [
             {
-              en: "By the time he joined the company, she had been working there for ten years.",
-              ru: "К тому моменту, как он пришёл в компанию, она проработала там уже десять лет. (возможно, она всё ещё работала, а возможно, уже уволилась — акцент на продолжительности опыта)",
+              en: "By the time he [[joined]] the company, she [[had been working]] there for ten years.",
+              ru: "К тому моменту, как он пришёл в компанию, она проработала там уже десять лет. (Возможно, она всё ещё работала, а возможно, уже уволилась — акцент на продолжительности опыта)",
             },
             {
-              en: "When they sold the house, they had been living in it for 20 years.",
+              en: "When they [[sold]] the house, they [[had been living]] in it for 20 years.",
               ru: "Когда они продали дом, они прожили в нём 20 лет.",
             },
             {
-              en: "By 2015, he had been teaching at the university for 15 years. ",
+              en: "By 2015, he [[had been teaching]] at the university for 15 years. ",
               ru: "К 2015 году он преподавал в университете уже 15 лет.",
             },
           ],
@@ -382,21 +381,21 @@ export const pastPerfectContinuous: GrammarTopic = {
         {
           type: "description",
           content:
-            "Как и Present Perfect Continuous с always, Past Perfect Continuous может выражать повторяющиеся действия в прошлом, которые происходили до определённого момента, часто с оттенком раздражения или неодобрения.",
+            "Как и {{Present Perfect Continuous}} с {{always}}, {{Past Perfect Continuous}} может выражать повторяющиеся действия в прошлом, которые происходили до определённого момента, часто с оттенком раздражения или неодобрения.",
         },
         {
           type: "examples",
           content: [
             {
-              en: "He had been constantly complaining about his salary before he finally quit.",
+              en: "He [[had been]] constantly complain[[ing]] about his salary before he finally quit.",
               ru: "Он постоянно жаловался на свою зарплату, прежде чем наконец уволился.",
             },
             {
-              en: "She had been always arriving late, so the manager fired her.",
+              en: "She [[had been]] always arriv[[ing]] late, so the manager fired her.",
               ru: "Она всегда опаздывала, поэтому менеджер уволил её.",
             },
             {
-              en: "They had been repeatedly asking for help, but nobody listened.",
+              en: "They [[had been]] repeatedly ask[[ing]] for help, but nobody listened.",
               ru: " Они неоднократно просили о помощи, но никто не слушал.",
             },
           ],
@@ -409,7 +408,7 @@ export const pastPerfectContinuous: GrammarTopic = {
       markers: [
         "before – до",
         "till – до (только в отрицательных предложениях)",
-        "untill – до (только в отрицательных предложениях)",
+        "until – до (только в отрицательных предложениях)",
       ],
       spaceAfter: true,
     },
@@ -444,5 +443,4 @@ export const pastPerfectContinuous: GrammarTopic = {
       spaceAfter: true,
     },
   ],
-  notes: [],
 };

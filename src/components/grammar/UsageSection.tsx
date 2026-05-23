@@ -10,11 +10,9 @@ type UsageSectionProps = {
 
 export function UsageSection({ title, icon: Icon, blocks }: UsageSectionProps) {
   return (
-    <div className="mb-10">
+    <div className="mb-18">
       <div className="flex items-start gap-4 mb-5">
-        {Icon && (
-          <Icon className="w-5 h-5 mt-1 flex-shrink-0 text-blue-600 dark:text-blue-400" />
-        )}
+        {Icon && <Icon className="w-5 h-5 mt-1 flex-shrink-0" />}
         <h2 className="text-2xl font-bold dark:text-white leading-tight">
           {title}
         </h2>
@@ -24,7 +22,7 @@ export function UsageSection({ title, icon: Icon, blocks }: UsageSectionProps) {
         {blocks.map((block, idx) => {
           if (block.type === "description") {
             return (
-              <div key={idx} className="mb-5">
+              <div key={idx} className="mb-5 whitespace-pre-wrap">
                 <FormattedText
                   text={block.content as string}
                   className="text-gray-600 dark:text-gray-300"
@@ -43,7 +41,7 @@ export function UsageSection({ title, icon: Icon, blocks }: UsageSectionProps) {
               const rightColumn = examples.slice(midIndex);
 
               return (
-                <div key={idx} className="ml-6 space-y-2">
+                <div key={idx} className="ml-6 space-y-2 max-w-xl">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-2">
                     <div className="space-y-1">
                       {leftColumn.map((ex, exIdx) => (
@@ -51,7 +49,7 @@ export function UsageSection({ title, icon: Icon, blocks }: UsageSectionProps) {
                           key={exIdx}
                           className="text-gray-700 dark:text-gray-300"
                         >
-                          <span className="mr-1 select-none">•</span>
+                          <span className="mr-2 select-none">•</span>
                           <FormattedText text={ex.en} />
                           {ex.ru && (
                             <>
@@ -72,7 +70,7 @@ export function UsageSection({ title, icon: Icon, blocks }: UsageSectionProps) {
                           key={exIdx}
                           className="text-gray-700 dark:text-gray-300"
                         >
-                          <span className="mr-1 select-none">•</span>
+                          <span className="mr-2 select-none">•</span>
                           <FormattedText text={ex.en} />
                           {ex.ru && (
                             <>
@@ -96,7 +94,7 @@ export function UsageSection({ title, icon: Icon, blocks }: UsageSectionProps) {
               <div key={idx} className="ml-6 space-y-1">
                 {examples.map((ex, exIdx) => (
                   <div key={exIdx} className="text-gray-700 dark:text-gray-300">
-                    <span className="mr-1 select-none">•</span>
+                    <span className="mr-2 select-none">•</span>
                     <FormattedText text={ex.en} />
                     {ex.ru && (
                       <>
@@ -121,7 +119,7 @@ export function UsageSection({ title, icon: Icon, blocks }: UsageSectionProps) {
               examples?: { en: string; ru: string }[];
             };
             return (
-              <div key={idx}>
+              <div key={idx} className="pt-10">
                 <GrammarNote
                   title={note.title}
                   content={note.content}

@@ -50,6 +50,7 @@ export function GrammarTopicPage() {
           blocks={section.blocks}
         />
       ))}
+
       <TimeMarkers markers={topic.timeMarkers} />
     </div>
   );
